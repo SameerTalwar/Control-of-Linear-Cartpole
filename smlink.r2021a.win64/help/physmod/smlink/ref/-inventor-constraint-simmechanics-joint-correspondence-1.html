@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage">
+<head>
+<meta xmlns="http://www.w3.org/1999/xhtml" charset="utf-8"></meta>
+<meta xmlns="http://www.w3.org/1999/xhtml" name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+<meta xmlns="http://www.w3.org/1999/xhtml" http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+<title>Constraints and Joints</title>
+<script xmlns="http://www.w3.org/1999/xhtml" type="application/ld+json">
+      {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement":
+      [{
+          "@type": "ListItem",
+          "position": 1,
+
+          "item": {
+          "@id": "../index.html",
+          "name": "Simscape Multibody Link"
+}
+
+          } 
+        ,
+        {
+          "@type": "ListItem",
+          "position": 2,
+
+          "item": {
+          "@id": "../creo-proengineer.html",
+          "name": "PTC Creo"
+}
+
+          }]
+      }</script><script xmlns="http://www.w3.org/1999/xhtml" type="application/ld+json">
+        {
+        "@context": "http://schema.org",
+        "@type": "ItemList",
+          "name": "VisibleBreadcrumbs",
+
+        "itemListElement":
+        [
+        "creo-proengineer"
+        ],
+        "itemListOrder": "http://schema.org/ItemListOrderAscending"
+        }
+        </script><link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/bootstrap.min.css" rel="stylesheet" type="text/css"></link>
+
+
+  <meta xmlns="http://www.w3.org/1999/xhtml" http-equiv="Content-Script-Type" content="text/javascript"></meta>
+<meta xmlns="http://www.w3.org/1999/xhtml" name="toctype" itemprop="pagetype" content="ug"></meta>
+<meta xmlns="http://www.w3.org/1999/xhtml" name="infotype" itemprop="infotype" content="ex"></meta>
+
+<meta xmlns="http://www.w3.org/1999/xhtml" name="description" itemprop="description" content="You create a CAD assembly by applying constraints between parts."></meta><script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/product/scripts/jquery/jquery-latest.js"></script>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/site6.css" rel="stylesheet" type="text/css"></link>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/site6_lg.css" rel="stylesheet" media="screen and (min-width: 1200px)"></link>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/site6_md.css" rel="stylesheet" media="screen and (min-width: 992px) and (max-width: 1199px)"></link>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/site6_sm+xs.css" rel="stylesheet" media="screen and (max-width: 991px)"></link>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/site6_sm.css" rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 991px)"></link>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/site6_xs.css" rel="stylesheet" media="screen and (max-width: 767px)"></link>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/site6_offcanvas_v2.css" rel="stylesheet" type="text/css"></link>
+
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/shared/scripts/l10n.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/shared/scripts/docscripts.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/shared/scripts/f1help.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/product/scripts/docscripts.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/shared/scripts/mw.imageanimation.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/shared/scripts/jquery.highlight.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/product/scripts/underscore-min.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/product/scripts/examples.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/product/scripts/use_platform_screenshots.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/product/scripts/suggest.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/shared/scripts/overload.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/shared/scripts/helpservices.js"></script>
+
+
+
+
+
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/product/scripts/jquery/jquery.mobile.custom.min.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/product/scripts/bootstrap.min.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/product/scripts/global.js"></script>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/doc_center_base.css" rel="stylesheet" type="text/css"></link>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/doc_center_installed.css" rel="stylesheet" type="text/css"></link>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/doc_center_print.css" rel="stylesheet" type="text/css" media="print"></link>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/shared/equationrenderer/release/MathRenderer.js"></script>
+</head>
+<body id="responsive_offcanvas">
+<div xmlns="http://www.w3.org/1999/xhtml" id="doc_header_spacer" class="header"></div>
+<div xmlns="http://www.w3.org/1999/xhtml" class="section_header level_3"><div class="container-fluid"><div class="row" id="mobile_search_row"><div class="col-sm-6 col-md-7 has_horizontal_local_nav" id="section_header_title"><div class="section_header_content"><div class="section_header_title"><h1><a href="../../../documentation-center.html">Documentation</a></h1></div></div></div><div class="col-xs-12 col-sm-6 col-md-5" id="mobile_search"><div class="search_nested_content_container"><form id="docsearch_form" name="docsearch_form" method="get" data-release="R2020b" data-language="en" action="../../../templates/searchresults.html"><div class="input-group tokenized_search_field"><label class="sr-only">Search Help</label><input type="text" class="form-control conjoined_search" autocomplete="off" name="qdoc" placeholder="Search Help" id="docsearch"> </input><div class="input-group-btn"><button type="submit" name="submitsearch" id="submitsearch" class="btn icon-search btn_search_adjacent btn_search icon_16" tabindex="-1"></button></div></div></form></div><button class="btn icon-remove btn_search pull-right icon_32 visible-xs" data-toggle="collapse" href="#mobile_search" aria-expanded="false" aria-controls="mobile_search"></button></div><div class="visible-xs" id="search_actuator"><button class="btn icon-search btn_search pull-right icon_16" data-toggle="collapse" href="#mobile_search" aria-expanded="false" aria-controls="mobile_search"></button></div></div></div></div><div class="row-offcanvas row-offcanvas-left">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sidebar-offcanvas" id="sidebar">
+<nav class="offcanvas_nav" role="navigation">
+<div class="offcanvas_actuator" data-toggle="offcanvas" data-target="#sidebar" id="nav_toggle"><button type="button" class="btn"><span class="sr-only">Off-Canvas Navigation Menu Toggle
+                  Off-Canvas Navigation Menu Toggle</span><span class="icon-menu"></span></button><span class="offcanvas_actuator_label" id="translation_icon-menu" tabindex="-1" aria-hidden="true"></span></div><div class="nav_list_wrapper" id="nav_list_wrapper"><nav class="offcanvas_nav" role="navigation"><ul class="nav_breadcrumb" id="ul_left_nav_ancestors"><li itemscope="" itemtype="http://www.data-vocabulary.org/Breadcrumb" itemprop="breadcrumb"><a href="../../../documentation-center.html?s_tid=CRUX_lftnav" itemprop="url"><span itemprop="title">Documentation Home</span></a></li></ul>
+<ul class="nav_disambiguation"><li><a href="../index.html?s_tid=CRUX_lftnav">Simscape Multibody Link</a>
+</li>
+<li itemscope="" itemtype="http://www.data-vocabulary.org/Breadcrumb" itemprop="breadcrumb"><a href="../creo-proengineer.html?s_tid=CRUX_lftnav" itemprop="url"><span itemprop="title">PTC Creo</span></a></li></ul><ul class="nav_scrollspy nav">
+<li class="nav_scrollspy_function"><a href="#responsive_offcanvas">Constraints and Joints</a></li>
+<li class="nav_scrollspy_title" id="SSPY810-section">On this page</li>
+<!--ADD_REFENTRY_TITLE_HERE 11--><li><a href="#bur2j66-1" class="intrnllnk">CAD Constraints and Entities</a></li><li><a href="#bur2j66-2" class="intrnllnk">Simscape Multibody Joint and Constraint Blocks</a></li><li><a href="#bur2j66-3" class="intrnllnk">CAD Constraint-Simscape Multibody Joint Mapping</a></li><li><a href="#bur2j66-4" class="intrnllnk">CAD Constraint-Simscape Multibody Constraint Mapping</a></li><li><a href="#bur2j66-5" class="intrnllnk">Special Constraint Translation Cases</a></li></ul>
+</nav></div></nav>
+<script src="../../../includes/product/scripts/offcanvas_v2.js"></script></div><!--END.CLASS sidebar-offcanvas-->
+<div class="offcanvas_content_container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sticky_header_container"><div class="horizontal_nav"><div class="horizontal_nav_container"><div class="offcanvas_horizontal_nav"><div class="container-fluid"><div class="row"><div class="col-sm-12 hidden-xs"><nav class="navbar navbar-default" role="navigation" id="subnav"><div><ul class="nav navbar-nav crux_browse"><li id="crux_nav_documentation" class="crux_resource active"><a>All</a></li><li id="crux_nav_example" class="crux_resource"><a href="../examples.html?category=creo-proengineer&amp;s_tid=CRUX_topnav">Examples</a></li><li id="crux_nav_function" class="crux_resource"><a href="../referencelist.html?type=function&amp;category=creo-proengineer&amp;s_tid=CRUX_topnav">Functions</a></li></ul></div></nav></div><div class="visible-xs"><div class="container-fluid"><div class="row"><div class="col-xs-9"><div class="mobile_crux_nav_trigger"><div class="btn-group"><button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources<span class="icon-arrow-down icon_16"></span></button><ul class="dropdown-menu"><li id="crux_nav_mobile_documentation" class="crux_resource active"><a>All</a></li><li id="crux_nav_mobile_example" class="crux_resource"><a href="../examples.html?category=creo-proengineer&amp;s_tid=CRUX_topnav">Examples</a></li><li id="crux_nav_mobile_function" class="crux_resource"><a href="../referencelist.html?type=function&amp;category=creo-proengineer&amp;s_tid=CRUX_topnav">Functions</a></li></ul></div></div></div><div class="col-xs-3"><div class="translate_placeholder"></div></div></div></div></div></div></div></div></div></div></div><div class="content_container" id="content_container" itemprop="content">
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12">
+
+<section xmlns="http://www.w3.org/1999/xhtml" id="doc_center_content" lang="en"><div id="pgtype-topic">
+<section itemprop="content"><h2 class="title r2020b" itemprop="title content" id="btmyucc-1">Constraints and Joints</h2><a class="indexterm" name="d122e1791"></a><a class="indexterm" name="d122e1797"></a><a class="indexterm" name="d122e1803"></a><section itemprop="content"><h3 class="title" id="bur2j66-1">CAD Constraints and Entities</h3><p>You create a CAD assembly by applying constraints between parts.
+Each constraint defines a kinematic relationship between constraint
+entities on the parts it connects. Angle and Centered are examples
+of constraints. Planes, lines, and points are examples of constraint
+entities.</p><p>Consider the connection between the upper-arm and forearm parts
+of a robotic-arm assembly. Such a connection allows the two parts
+to rotate with respect to each other about a single axis and therefore
+has one rotational degree of freedom. You specify this degree of freedom
+by applying constraints such as:</p>
+<div class="itemizedlist"><ul><li><p>One Centered constraint between the cylindrical hinge
+surfaces of the two parts. This constraint reduces the joint degrees
+of freedom to two&#8212;one translational, along the cylindrical
+axis, and one rotational, about the same axis.</p></li><li><p>One Coincident constraint between two planes normal
+to the cylindrical axis. This constraint removes the translational
+degree of freedom the Centered constraint provides between the two
+parts. The combined constraint set allows the parts only to rotate
+about the common cylindrical axis.</p></li></ul></div><p>
+The figure shows the constrained surfaces on the upper-arm
+and forearm parts.</p>
+<div class="informalfigure"><div id="d122e1822" class="mediaobject"><p><img src="robot_mates_transparent.png" alt="" height="270" width="480"></img></p></div></div><p></p><p><span class="entity">Simscape&#x2122;
+            Multibody&#x2122;</span> software can successfully import CAD assemblies
+that contain these constraints:</p>
+<div class="itemizedlist"><ul><li><p>Angle Offset<span class="guiicon"><span class="inlinemediaobject inlinemediaobject_14_px"><img src="creo_angle.png" alt="" height="14" width="14"></img></span></span></p></li><li><p>Coincident <span class="guiicon"><span class="inlinemediaobject inlinemediaobject_14_px"><img src="creo_coincident.png" alt="" height="14" width="14"></img></span></span></p></li><li><p>Centered <span class="guiicon"><span class="inlinemediaobject inlinemediaobject_14_px"><img src="creo_centered.png" alt="" height="14" width="14"></img></span></span></p></li><li><p>Distance <span class="guiicon"><span class="inlinemediaobject inlinemediaobject_14_px"><img src="creo_distance.png" alt="" height="14" width="14"></img></span></span></p></li><li><p>Parallel <span class="guiicon"><span class="inlinemediaobject inlinemediaobject_14_px"><img src="creo_parallel.png" alt="" height="14" width="14"></img></span></span></p></li><li><p>Normal <span class="guiicon"><span class="inlinemediaobject inlinemediaobject_14_px"><img src="creo_normal.png" alt="" height="14" width="15"></img></span></span></p></li></ul></div><p>
+</p><p><span class="entity">Simscape
+            Multibody</span> software can successfully import CAD assemblies
+whose constraints join these constraint entities:</p>
+<div class="itemizedlist"><ul><li><p>Circle/arc <span class="guiicon"><span class="inlinemediaobject inlinemediaobject_13_px"><img src="circle_entity.png" class="baseline3" alt="" height="13" width="13"></img></span></span></p></li><li><p>Cone <span class="guiicon"><span class="inlinemediaobject inlinemediaobject_13_px"><img src="cone_entity.png" class="baseline3" alt="" height="13" width="13"></img></span></span></p></li><li><p>Cylinder <span class="guiicon"><span class="inlinemediaobject inlinemediaobject_13_px"><img src="cylinder_entity.png" class="baseline3" alt="" height="13" width="13"></img></span></span></p></li><li><p>Line <span class="guiicon"><span class="inlinemediaobject inlinemediaobject_13_px"><img src="line_entity.png" class="baseline3" alt="" height="13" width="13"></img></span></span></p></li><li><p>Plane <span class="guiicon"><span class="inlinemediaobject inlinemediaobject_13_px"><img src="plane_entity.png" class="baseline3" alt="" height="13" width="13"></img></span></span></p></li><li><p>Point <span class="guiicon"><span class="inlinemediaobject inlinemediaobject_13_px"><img src="point_entity.png" class="baseline3" alt="" height="13" width="13"></img></span></span></p></li></ul></div><p>
+</p><p>Supported constraints are valid only for certain entity pairs.
+The table shows the entity pairs compatible with the supported constraints.
+This table is symmetric with respect to the diagonal row.</p><p></p>
+<div class="informalfigure"><div id="d122e1930" class="mediaobject"><p><img src="creo_table_mates_entities_b.png" alt="" height="321" width="455"></img></p></div></div><p></p></section><section itemprop="content"><h3 class="title" id="bur2j66-2"><span class="entity"><span class="trademark">Simscape</span>             <span class="trademark">Multibody</span></span> Joint and Constraint Blocks</h3><p>Joint and Constraint blocks are the <span class="entity">Simscape
+            Multibody</span> equivalent
+of CAD constraints. They apply between two bodies the kinematic constraints
+that determine how they can move. A Revolute Joint block is an example.
+This block removes five degrees of freedom between two bodies, allowing
+them only to rotate about a common axis.</p><p>Consider the connection between the upper-arm and forearm parts
+of the robotic arm assembly. This connection provides a single rotational
+degree of freedom and therefore acts as a revolute joint. During CAD
+import, the constraints between the two parts translate into a Revolute
+Joint block between two rigid body subsystems. The figure shows this
+joint block in an imported model.</p>
+<div class="informalfigure"><div id="d122e1954" class="mediaobject"><p><img src="sm_robot_model.png" alt="" height="441" width="584"></img></p></div></div><p></p><p>Joint blocks are assortments of joint primitives, basic yet
+complete joints of various kinds you cannot decompose any further&#8212;at
+least without losing behavior such as the rotational-translational
+coupling of the lead screw joint. Joint primitives range in number
+from zero in the Weld Joint block to six in the Bushing Joint block.
+There are five joint primitives:</p>
+<div class="itemizedlist"><ul><li><p>Prismatic &#8212; Allows translation along a single
+standard axis (x, y, or z). Joint blocks can contain up to three prismatic
+joint primitives, one for each translational DoF. Prismatic primitives
+are labelled P*, where the asterisk denotes the axis of motion, e.g.,
+Px, Py, or Pz.</p>
+<div class="informalfigure"><div id="d122e1964" class="mediaobject"><p class="listimage"><img src="prismatic_primitive.png" alt="" height="165" width="220"></img></p></div></div><p></p></li><li><p>Revolute &#8212; Allows rotation about a single standard
+axis (x, y, or z). Joint blocks can contain up to three revolute joint
+primitives, one for each rotational DoF. Revolute primitives are labelled
+R*, where the asterisk denotes the axis of motion, e.g., Rx, Ry, or
+Rz.</p>
+<div class="informalfigure"><div id="d122e1971" class="mediaobject"><p class="listimage"><img src="revolute_primitive.png" alt="" height="165" width="220"></img></p></div></div><p></p></li><li><p>Spherical &#8212; Allows rotation about any 3-D axis,
+[<em class="varname">x</em>, <em class="varname">y</em>, <em class="varname">z</em>].
+Joint blocks contain no more than one spherical primitive, and never
+in combination with revolute primitives. Spherical primitives are
+labelled S.</p>
+<div class="informalfigure"><div id="d122e1984" class="mediaobject"><p class="listimage"><img src="spherical_primitive.png" alt="" height="165" width="220"></img></p></div></div><p></p></li><li><p>Lead Screw Primitive &#8212; Allows coupled rotation
+and translation on a standard axis (e.g., z). This primitive converts
+between rotation at one end and translation at the other. Joint blocks
+contain no more than one lead screw primitive. Lead screw primitives
+are labeled LS*, where the asterisk denotes the axis of motion.</p></li><li><p>Constant Velocity Joint &#8212; Allows rotation at
+constant velocity between intersecting though arbitrarily aligned
+shafts. Joint blocks contain no more than one constant velocity primitive.
+Constant velocity primitives are labelled CV.</p></li></ul></div><p>
+</p><p>The table shows the Joint blocks supported during CAD import,
+the joint primitives the blocks contain, and the degrees of freedom
+they provide. T and R denote translational and rotational DOFs. Joint
+blocks not shown are not supported.</p>
+<div class="informalfigure"><div id="d122e1994" class="mediaobject"><p><img src="table_supported_joints.png" alt="" height="274" width="390"></img></p></div></div><p></p><p>By defining the relative degrees of freedom between two bodies,
+Joint blocks partially determine how these bodies can move with respect
+to each other. Constraint blocks enable you to impose additional restrictions
+on their motion. CAD constraints can translate into these Constraint
+blocks:</p>
+<div class="itemizedlist"><ul><li><p><a href="../../../physmod/sm/ref/angleconstraint.html"><span class="block">Angle Constraint</span></a></p></li><li><p><a href="../../../physmod/sm/ref/distanceconstraint.html"><span class="block">Distance Constraint</span></a></p></li></ul></div><p>
+</p></section><section itemprop="content"><h3 class="title" id="bur2j66-3">CAD Constraint-<span class="entity"><span class="trademark">Simscape</span>             <span class="trademark">Multibody</span></span> Joint Mapping</h3><p>The table shows some of the constraint combinations you can
+use to obtain a specific joint block during CAD import. Different
+constraint combinations can map into the same joint. This happens
+if the constraint combinations provide the same degrees of freedom
+between the parts they join. For a legend of the icons in the table,
+see <a href="-inventor-constraint-simmechanics-joint-correspondence-1.html#bur2j66-1" class="intrnllnk">CAD Constraints and Entities</a>.</p>
+<div class="informalfigure"><div id="d122e2023" class="mediaobject"><p><img src="creo_table_mate_joint_mapping_c.png" alt="" height="316" width="504"></img></p></div></div><p></p><p>Constraint pairs marked with a note number must satisfy additional
+requirements. This list outlines those requirements:</p>
+<div class="orderedlist"><ol style="list-style: decimal;"><li><p>Cylinder axes in constraint I must be parallel to
+planes in constraint II.</p></li><li><p>Lines in constraint I must be parallel to planes in
+constraint II.</p></li><li><p>Planes in constraint I must not be parallel to planes
+in constraint II.</p></li><li><p>Lines in constraint I must be perpendicular to planes
+in constraint II.</p></li></ol></div><p>
+</p></section><section itemprop="content"><h3 class="title" id="bur2j66-4">CAD Constraint-<span class="entity"><span class="trademark">Simscape</span>             <span class="trademark">Multibody</span></span> Constraint Mapping</h3><p>The table shows the Constraint blocks that different constraint
+combinations map into. Different constraints can map into the same
+Constraint block if they provide the same degrees of freedom. For
+a legend of the icons in the table, see <a href="-inventor-constraint-simmechanics-joint-correspondence-1.html#bur2j66-1" class="intrnllnk">CAD Constraints and Entities</a>.</p>
+<div class="informalfigure"><div id="d122e2052" class="mediaobject"><p><img src="creo_table_mate_constraint_mapping.png" alt="" height="156" width="502"></img></p></div></div><p></p></section><section itemprop="content"><h3 class="title" id="bur2j66-5">Special Constraint Translation Cases</h3><p>The lack of constraints between parts, combinations of constraints
+that fully restrict motion between parts, and unsupported constraints
+are special translation cases. Here is how <span class="entity">Simscape
+            Multibody</span> software
+handles these cases:</p>
+<div class="itemizedlist"><ul><li><p>Unsupported constraints between parts translate into
+rigid connections between rigid bodies. The rigid connections can
+be in the form of Weld Joint blocks or direct frame connection lines
+between the rigid bodies. These connections are meant to be temporary.
+After CAD import, search your model for rigid connections and, if
+appropriate, replace them with other Joint and Constraint blocks.</p></li><li><p>Combinations of constraints that fully restrict motion
+between parts translate into rigid connections between rigid bodies.
+The rigid connections can be in the form of Weld Joint blocks or direct
+frame connection lines between the rigid bodies. These rigid connections
+accurately model the degrees of freedom between the two bodies and
+do not need to be replaced.</p></li><li><p>The absence of a constraint between a part and the
+rest of the assembly translates into a 6-DOF Joint block between a
+rigid body and the World frame. This joint block provides the rigid
+body the six degrees of freedom that the CAD part has within the CAD
+assembly.</p></li></ul></div><p>
+</p></section></section>
+    </div><div class="clearfix"></div>
+<div align="center" class="feedbackblock"><iframe id="doc_survey"></iframe></div><script src="../../../includes/shared/scripts/docsurvey.js"></script>
+
+<script>initDocSurvey();</script></section>
+
+
+</div>
+</div>
+</div>
+</div><!--close_0960-->
+<div xmlns="http://www.w3.org/1999/xhtml" class="body_trail_container">
+<section><div class="container-fluid">
+<div class="row">
+<div class="col-xs-12">
+<div class="row"><div class="col-xs-12 col-sm-4"><h2><a href="../index.html?s_cid=doc_ftr">Simscape Multibody Link Documentation</a></h2>
+<ul class="list-unstyled hidden-xs"><li><a href="../examples.html?s_cid=doc_ftr">Examples</a></li>
+<li><a href="../referencelist.html?type=function&amp;s_cid=doc_ftr">Functions</a></li>
+<li><a href="../release-notes.html?s_cid=doc_ftr">Release Notes</a></li>
+<li><a href="https://www.mathworks.com/help/releases/R2020b/pdf_doc/physmod/smlink/index.html?s_cid=doc_ftr">PDF Documentation</a></li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-4"><h2><a href="https://www.mathworks.com/support.html?s_cid=doc_ftr">Support</a></h2>
+<ul class="list-unstyled hidden-xs"><li><a href="https://www.mathworks.com/matlabcentral/answers/index?s_cid=doc_ftr">MATLAB Answers</a></li><li><a href="https://www.mathworks.com/support/install-matlab.html?s_cid=doc_ftr">Installation Help</a></li><li><a href="https://www.mathworks.com/support/bugreports/?s_cid=doc_ftr">Bug Reports</a></li><li><a href="https://www.mathworks.com/support/requirements/product-requirements-platform-availability-list.html?s_cid=doc_ftr">Product Requirements</a></li><li><a href="https://www.mathworks.com/downloads/?s_cid=doc_ftr">Software Downloads</a></li></ul>
+</div>
+</div>
+</div>
+</div>
+</div><!--END.CLASS container-fluid-->
+</section></div><!--END.CLASS body_trail_container-->
+<footer xmlns="http://www.w3.org/1999/xhtml" id="footer" class="bs-footer">
+<div class="container-fluid">
+<div class="footer">
+<div class="row">
+<div class="col-xs-12">
+<p class="copyright">© 1994-2020 The MathWorks, Inc.</p>
+<ul class="footernav"><li class="footernav_help"><a href="MATLAB:web(matlab.internal.licenseAgreement)">Terms of Use</a></li><li class="footernav_patents"><a href="MATLAB:web([matlabroot '/patents.txt'])">Patents</a></li><li class="footernav_trademarks"><a href="MATLAB:web([matlabroot '/trademarks.txt'])">Trademarks</a></li><li class="footernav_piracy"><a href="MATLAB:web([docroot '/acknowledgments.html'])">Acknowledgments</a></li></ul></div>
+</div>
+</div>
+</div>
+</footer>
+</div><!--close row-offcanvas-->
+</div><!--close_0970-->
+</body>
+</html>

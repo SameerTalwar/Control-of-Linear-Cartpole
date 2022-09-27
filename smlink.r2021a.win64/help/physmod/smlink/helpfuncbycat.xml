@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toc version="2.0">
+<tocitem target="functionlistbycat.html">Functions
+<tocitem target="cad-link.html">Autodesk Inventor
+<tocitem target="ref/smlink_linkinv.html">
+<name>smlink_linkinv</name>
+<purpose>Add  to your Windows registry as an  plugin</purpose>
+</tocitem>
+<tocitem target="ref/smlink_unlinkinv.html">
+<name>smlink_unlinkinv</name>
+<purpose>Remove  from your Windows registry as an  plugin</purpose>
+</tocitem>
+</tocitem>
+<tocitem target="solidworks.html">SolidWorks
+<tocitem target="ref/smlink_linksw.html">
+<name>smlink_linksw</name>
+<purpose>Add  to your Windows registry as a  plugin</purpose>
+</tocitem>
+<tocitem target="ref/smlink_unlinksw.html">
+<name>smlink_unlinksw</name>
+<purpose>Remove  from your Windows registry as a  plugin</purpose>
+</tocitem>
+</tocitem>
+</tocitem>
+</toc>

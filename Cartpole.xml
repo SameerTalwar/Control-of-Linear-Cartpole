@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="12/18/21||18:52:07" using="Simscape Multibody Link Version 7.0" from="SolidWorks 26.0.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="Cartpoleass" uid="Cartpoleass" version="111">
+<AssemblyFile name="Cartpoleass.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="pd-1" uid="pd-1" entityUid="pd*:*Default">
+<Transform>
+<Rotation>0 0 1 -0.003494790838677818 0.99999389319985044 0 -0.99999389319985044 -0.003494790838677818 0</Rotation>
+<Translation>0.027569524447231535 0.018670564333117118 0.17361597430650244</Translation>
+</Transform>
+</Instance>
+<Instance name="slid-1" uid="slid-1" entityUid="slid*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.0025695244472315349 0.01863555535672904 0.13858108746611719</Translation>
+</Transform>
+</Instance>
+<Instance name="Ext-1" uid="Ext-1" grounded="true" entityUid="Ext*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.0025695244472315332 0.018635555356729033 -0.21184121199460643</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="Coincident1">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>slid-1</Uid>
+</InstancePath>
+<Position>0 0.019999999999999997 0.049999999999999989</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Ext-1</Uid>
+</InstancePath>
+<Position>0 0.020000000000000004 0.5</Position>
+<Axis>0 1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Coincident name="Coincident2">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>slid-1</Uid>
+</InstancePath>
+<Position>0.020000000000000004 0 0.049999999999999989</Position>
+<Axis>-1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>Ext-1</Uid>
+</InstancePath>
+<Position>0.02 0 0.5</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric1">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>slid-1</Uid>
+</InstancePath>
+<Position>0.015000000000000001 0.010000000000000002 0.024999999999999994</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>pd-1</Uid>
+</InstancePath>
+<Position>0.010000000000000009 0.010000000000000002 0.010000000000000002</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>slid-1</Uid>
+</InstancePath>
+<Position>0.025000000000000001 -0.005000000000000001 0.049999999999999989</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>pd-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 -1</Axis>
+</ConstraintGeometry>
+</Coincident>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="Ext" uid="Ext*:*Default" version="105">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="Ext.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.20000000000000004</Mass>
+<CenterOfMass>0.01 0.01 0.25</CenterOfMass>
+<Inertia>0.0041733333333333336 0.0041733333333333336 1.3333333333333337e-05 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="Ext_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="pd" uid="pd*:*Default" version="105">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="pd.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.029803650459150642</Mass>
+<CenterOfMass>0.0099999999999999985 0.075428226742650248 0.0049999999999999992</CenterOfMass>
+<Inertia>5.5663014809500698e-05 1.2480569576686785e-06 5.6414344259516868e-05 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="pd_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="slid" uid="slid*:*Default" version="108">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="slid.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>0.02490182522957532</Mass>
+<CenterOfMass>0.0099507190891031157 0.010000000000000002 0.025000000000000001</CenterOfMass>
+<Inertia>7.9163598705090927e-06 7.9009084531608881e-06 5.4009084531608832e-06 0 0 0</Inertia>
+</MassProperties>
+<GeometryFile name="slid_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>

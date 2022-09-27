@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<demos>
+   <name>Simscape Multibody Link</name>
+   <type>matlab</type>
+   <icon>$toolbox/matlab/icons/matlabicon.gif</icon>
+   <label>Simscape Multibody Link</label>
+   <description isCdata="no">
+<p>Simscape Multibody&#8482; Link provides a bridge from third-party mechanical design and modeling applications to the system and control design features of MATLAB&#174; and Simulink&#174;. It connects computer-aided design (CAD) modeling to mechanical modeling with Simscape Multibody&#8482;.</p>
+   </description>
+<demosection>
+    <label>Inventor CAD Assemblies</label>
+<demoitem>
+    <label>Joints</label>
+    <file>html/invjoints.html</file>
+    <type>other</type>
+</demoitem>
+<demoitem>
+	<label>Robot Arm</label>
+    <file>html/invrobot.html</file>
+	<type>other</type>
+</demoitem>
+</demosection>
+
+<demosection>
+	<label>Pro/ENGINEER CAD Assemblies</label>
+<demoitem>
+	<label>Joints</label>
+    <file>html/proejoints.html</file>
+	<type>other</type>
+</demoitem>
+<demoitem>
+	<label>Robot Arm</label>
+    <file>html/proerobot.html</file>
+	<type>other</type>
+</demoitem>
+<demoitem>
+	<label>Stewart Platform</label>
+    <file>html/proestewart.html</file>
+	<type>other</type>
+</demoitem>
+</demosection>
+
+<demosection>
+    <label>SolidWorks CAD Assemblies</label>
+<demoitem>
+	<label>Joints</label>
+    <file>html/swjoints.html</file>
+	<type>other</type>
+</demoitem>
+<demoitem>
+	<label>Robot Arm</label>
+    <file>html/swrobot.html</file>
+	<type>other</type>
+</demoitem>
+<demoitem>
+	<label>Stewart Platform</label>
+	<file>html/swstewart.html</file>
+	<type>other</type>
+</demoitem>
+<demoitem>
+    <label>User-Added Coordinate Systems</label>
+    <file>html/swgears.html</file>
+    <type>other</type>
+</demoitem>
+</demosection>
+
+</demos>

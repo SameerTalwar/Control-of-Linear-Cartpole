@@ -1,0 +1,224 @@
+{ "schema" : "referenceapi_lookup_schema.json",
+  "schemaVersion" : "1.0",
+  "productName" : "Simscape Multibody Link",
+  "baseCode" : "MS",
+  "helpFolder" : "smlink",
+  "helpLocation" : "physmod\/smlink",
+  "refItems" : [
+ 
+    { "name" : "pmit_add_cadcs",
+      "type" : "function",
+      "refpurpose" : "Add coordinate system to handle object of PmitCadModelH class",
+      "href" : "ref\/pmit_add_cadcs.html" } ,
+ 
+    { "name" : "pmit_add_constrain",
+      "type" : "function",
+      "refpurpose" : "Add constraint to handle object of PmitCadModelH class",
+      "href" : "ref\/pmit_add_constrain.html" } ,
+ 
+    { "name" : "pmit_add_refincadmodel",
+      "type" : "function",
+      "refpurpose" : "Add object of PmitCadModelRefH class to object of PmitCadModelH class",
+      "href" : "ref\/pmit_add_refincadmodel.html" } ,
+ 
+    { "name" : "pmit_add_refincomp",
+      "type" : "function",
+      "refpurpose" : "Add object of PmitCadModelRefH class at end of object of PmitAssemCompH class",
+      "href" : "ref\/pmit_add_refincomp.html" } ,
+ 
+    { "name" : "pmit_cadmodel_setfilename",
+      "type" : "function",
+      "refpurpose" : "Specify body geometry file name for handle object of PmitCadModelH class",
+      "href" : "ref\/pmit_cadmodel_setfilename.html" } ,
+ 
+    { "name" : "pmit_cadmodelref_getcadmodel",
+      "type" : "function",
+      "refpurpose" : "Get object of PmitCadModelH class from children of object of PmitCadModelRefH class",
+      "href" : "ref\/pmit_cadmodelref_getcadmodel.html" } ,
+ 
+    { "name" : "pmit_connectto_matlab",
+      "type" : "function",
+      "refpurpose" : "Connect to MATLAB session",
+      "href" : "ref\/pmit_connectto_matlab.html" } ,
+ 
+    { "name" : "pmit_create_assemcomp_fromstr",
+      "type" : "function",
+      "refpurpose" : "Create object of PmitAssemCompH class",
+      "href" : "ref\/pmit_create_assemcomp_fromstr.html" } ,
+ 
+    { "name" : "pmit_create_assemcomp",
+      "type" : "function",
+      "refpurpose" : "Create object of PmitAssemCompH class",
+      "href" : "ref\/pmit_create_assemcomp.html" } ,
+ 
+    { "name" : "pmit_create_cad2sm",
+      "type" : "function",
+      "refpurpose" : "Create object of PmitCad2SMH class",
+      "href" : "ref\/pmit_create_cad2sm.html" } ,
+ 
+    { "name" : "pmit_create_cadcs",
+      "type" : "function",
+      "refpurpose" : "Create object of PmitCadCSH class",
+      "href" : "ref\/pmit_create_cadcs.html" } ,
+ 
+    { "name" : "pmit_create_cadmodel",
+      "type" : "function",
+      "refpurpose" : "Create object of PmitCadModelH class",
+      "href" : "ref\/pmit_create_cadmodel.html" } ,
+ 
+    { "name" : "pmit_create_cadmodelref",
+      "type" : "function",
+      "refpurpose" : "Create object of PmitCadModelRefH class",
+      "href" : "ref\/pmit_create_cadmodelref.html" } ,
+ 
+    { "name" : "pmit_create_constrain",
+      "type" : "function",
+      "refpurpose" : "Create object of PmitConstrainH class",
+      "href" : "ref\/pmit_create_constrain.html" } ,
+ 
+    { "name" : "pmit_disconnectfrom_matlab",
+      "type" : "function",
+      "refpurpose" : "Disconnect from MATLAB session",
+      "href" : "ref\/pmit_disconnectfrom_matlab.html" } ,
+ 
+    { "name" : "pmit_get_reffixedstatus",
+      "type" : "function",
+      "refpurpose" : "Get fixed status of CAD model",
+      "href" : "ref\/pmit_get_reffixedstatus.html" } ,
+ 
+    { "name" : "pmit_get_refflexiblestatus",
+      "type" : "function",
+      "refpurpose" : "Get flexible status of CAD model",
+      "href" : "ref\/pmit_get_refflexiblestatus.html" } ,
+ 
+    { "name" : "pmit_open_demo",
+      "type" : "function",
+      "refpurpose" : "Open Simscape Multibody Link examples in MATLAB Help browser",
+      "href" : "ref\/pmit_open_demo.html" } ,
+ 
+    { "name" : "pmit_open_help",
+      "type" : "function",
+      "refpurpose" : "Open product documentation in MATLAB Help browser",
+      "href" : "ref\/pmit_open_help.html" } ,
+ 
+    { "name" : "pmit_release_buffer",
+      "type" : "function",
+      "refpurpose" : "Release character buffer returned by API function",
+      "href" : "ref\/pmit_release_buffer.html" } ,
+ 
+    { "name" : "pmit_release_object",
+      "type" : "function",
+      "refpurpose" : "Release object used by API session",
+      "href" : "ref\/pmit_release_object.html" } ,
+ 
+    { "name" : "pmit_set_reffixedstatus",
+      "type" : "function",
+      "refpurpose" : "Set fixed status of CAD model",
+      "href" : "ref\/pmit_set_reffixedstatus.html" } ,
+ 
+    { "name" : "pmit_set_refflexiblestatus",
+      "type" : "function",
+      "refpurpose" : "Set flexible status of CAD model",
+      "href" : "ref\/pmit_set_refflexiblestatus.html" } ,
+ 
+    { "name" : "pmit_set_tolerances",
+      "type" : "function",
+      "refpurpose" : "Set linear, angular, and relative tolerances of object of PmitCad2SMH class",
+      "href" : "ref\/pmit_set_tolerances.html" } ,
+ 
+    { "name" : "pmit_set_units",
+      "type" : "function",
+      "refpurpose" : "Set units for API session",
+      "href" : "ref\/pmit_set_units.html" } ,
+ 
+    { "name" : "pmit_write_xml",
+      "type" : "function",
+      "refpurpose" : "Write output of object of PmitCad2SMH class",
+      "href" : "ref\/pmit_write_xml.html" } ,
+ 
+    { "name" : "PmitAssemCompH",
+      "type" : "simscapeblock",
+      "refpurpose" : "Handle object type to represent component in API CAD model",
+      "href" : "ref\/pmitassemcomph.html" } ,
+ 
+    { "name" : "PmitCad2SMH",
+      "type" : "simscapeblock",
+      "refpurpose" : "Handle object type to represent API-to-XML translator",
+      "href" : "ref\/pmitcad2smh.html" } ,
+ 
+    { "name" : "PmitCadCSH",
+      "type" : "simscapeblock",
+      "refpurpose" : "Handle object type to represent coordinate system",
+      "href" : "ref\/pmitcadcsh.html" } ,
+ 
+    { "name" : "PmitCadModelH",
+      "type" : "simscapeblock",
+      "refpurpose" : "Handle object type to represent API CAD model",
+      "href" : "ref\/pmitcadmodelh.html" } ,
+ 
+    { "name" : "PmitCadModelRefH",
+      "type" : "simscapeblock",
+      "refpurpose" : "Handle object type to reference a CAD model in API CAD model hierarchy",
+      "href" : "ref\/pmitcadmodelrefh.html" } ,
+ 
+    { "name" : "PmitConstrainH",
+      "type" : "simscapeblock",
+      "refpurpose" : "Handle object type to represent constraint",
+      "href" : "ref\/pmitconstrainh.html" } ,
+ 
+    { "name" : "PmitConstrainType",
+      "type" : "simscapeblock",
+      "refpurpose" : "Enumerated type for specifying constraint type",
+      "href" : "ref\/pmitconstraintype.html" } ,
+ 
+    { "name" : "PmitError",
+      "type" : "simscapeblock",
+      "refpurpose" : "Enumerated type for error status",
+      "href" : "ref\/pmiterror.html" } ,
+ 
+    { "name" : "PmitGeomType",
+      "type" : "simscapeblock",
+      "refpurpose" : "Enumerated type for specifying geometry of component",
+      "href" : "ref\/pmitgeomtype.html" } ,
+ 
+    { "name" : "PmitLengthUnit",
+      "type" : "simscapeblock",
+      "refpurpose" : "Enumerated type for specifying length unit in API session",
+      "href" : "ref\/pmitlengthunit.html" } ,
+ 
+    { "name" : "PmitMassUnit",
+      "type" : "simscapeblock",
+      "refpurpose" : "Enumerated type for specifying mass unit in API session",
+      "href" : "ref\/pmitmassunit.html" } ,
+ 
+    { "name" : "PmitObjectH",
+      "type" : "simscapeblock",
+      "refpurpose" : "Handle object type to represent any API object",
+      "href" : "ref\/pmitobjecth.html" } ,
+ 
+    { "name" : "PmitVisMatProp",
+      "type" : "simscapeblock",
+      "refpurpose" : "Structure type for defining visualized material properties of API CAD object",
+      "href" : "ref\/pmitvismatprop.html" } ,
+ 
+    { "name" : "smlink_linkinv",
+      "type" : "function",
+      "refpurpose" : "Add Simscape Multibody Link to your Windows registry as an Autodesk Inventor plugin",
+      "href" : "ref\/smlink_linkinv.html" } ,
+ 
+    { "name" : "smlink_linksw",
+      "type" : "function",
+      "refpurpose" : "Add Simscape Multibody Link to your Windows registry as a SolidWorks plugin",
+      "href" : "ref\/smlink_linksw.html" } ,
+ 
+    { "name" : "smlink_unlinkinv",
+      "type" : "function",
+      "refpurpose" : "Remove Simscape Multibody Link from your Windows registry as an Autodesk Inventor plugin",
+      "href" : "ref\/smlink_unlinkinv.html" } ,
+ 
+    { "name" : "smlink_unlinksw",
+      "type" : "function",
+      "refpurpose" : "Remove Simscape Multibody Link from your Windows registry as a SolidWorks plugin",
+      "href" : "ref\/smlink_unlinksw.html" } 
+  ]
+}

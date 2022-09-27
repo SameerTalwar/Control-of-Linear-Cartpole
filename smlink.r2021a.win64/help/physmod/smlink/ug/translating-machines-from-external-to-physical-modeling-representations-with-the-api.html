@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage">
+<head>
+<meta xmlns="http://www.w3.org/1999/xhtml" charset="utf-8"></meta>
+<meta xmlns="http://www.w3.org/1999/xhtml" name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+<meta xmlns="http://www.w3.org/1999/xhtml" http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+<title>Custom Translation into an XML Multibody Description File</title>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/bootstrap.min.css" rel="stylesheet" type="text/css"></link>
+
+
+  <meta xmlns="http://www.w3.org/1999/xhtml" http-equiv="Content-Script-Type" content="text/javascript"></meta>
+<meta xmlns="http://www.w3.org/1999/xhtml" name="toctype" itemprop="pagetype" content="ug"></meta>
+<meta xmlns="http://www.w3.org/1999/xhtml" name="infotype" itemprop="infotype" content="other"></meta>
+
+<meta xmlns="http://www.w3.org/1999/xhtml" name="description" itemprop="description" content="Using the Simscape Multibody Link API to convert a CAD assembly model into an intermediate XML model representation."></meta><script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/product/scripts/jquery/jquery-latest.js"></script>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/site6.css" rel="stylesheet" type="text/css"></link>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/site6_lg.css" rel="stylesheet" media="screen and (min-width: 1200px)"></link>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/site6_md.css" rel="stylesheet" media="screen and (min-width: 992px) and (max-width: 1199px)"></link>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/site6_sm+xs.css" rel="stylesheet" media="screen and (max-width: 991px)"></link>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/site6_sm.css" rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 991px)"></link>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/site6_xs.css" rel="stylesheet" media="screen and (max-width: 767px)"></link>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/site6_offcanvas_v2.css" rel="stylesheet" type="text/css"></link>
+
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/shared/scripts/l10n.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/shared/scripts/docscripts.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/shared/scripts/f1help.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/product/scripts/docscripts.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/shared/scripts/mw.imageanimation.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/shared/scripts/jquery.highlight.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/product/scripts/underscore-min.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/product/scripts/examples.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/product/scripts/use_platform_screenshots.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/product/scripts/suggest.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/shared/scripts/overload.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/shared/scripts/helpservices.js"></script>
+
+
+
+
+
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/product/scripts/jquery/jquery.mobile.custom.min.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/product/scripts/bootstrap.min.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/product/scripts/global.js"></script>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/doc_center_base.css" rel="stylesheet" type="text/css"></link>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/doc_center_installed.css" rel="stylesheet" type="text/css"></link>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/doc_center_print.css" rel="stylesheet" type="text/css" media="print"></link>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/shared/equationrenderer/release/MathRenderer.js"></script>
+</head>
+<body id="responsive_offcanvas">
+<div xmlns="http://www.w3.org/1999/xhtml" id="doc_header_spacer" class="header"></div>
+<div xmlns="http://www.w3.org/1999/xhtml" class="section_header level_3"><div class="container-fluid"><div class="row" id="mobile_search_row"><div class="col-sm-6 col-md-7 has_horizontal_local_nav" id="section_header_title"><div class="section_header_content"><div class="section_header_title"><h1><a href="../../../documentation-center.html">Documentation</a></h1></div></div></div><div class="col-xs-12 col-sm-6 col-md-5" id="mobile_search"><div class="search_nested_content_container"><form id="docsearch_form" name="docsearch_form" method="get" data-release="R2020b" data-language="en" action="../../../templates/searchresults.html"><div class="input-group tokenized_search_field"><label class="sr-only">Search Help</label><input type="text" class="form-control conjoined_search" autocomplete="off" name="qdoc" placeholder="Search Help" id="docsearch"> </input><div class="input-group-btn"><button type="submit" name="submitsearch" id="submitsearch" class="btn icon-search btn_search_adjacent btn_search icon_16" tabindex="-1"></button></div></div></form></div><button class="btn icon-remove btn_search pull-right icon_32 visible-xs" data-toggle="collapse" href="#mobile_search" aria-expanded="false" aria-controls="mobile_search"></button></div><div class="visible-xs" id="search_actuator"><button class="btn icon-search btn_search pull-right icon_16" data-toggle="collapse" href="#mobile_search" aria-expanded="false" aria-controls="mobile_search"></button></div></div></div></div><div class="row-offcanvas row-offcanvas-left">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sidebar-offcanvas" id="sidebar">
+<nav class="offcanvas_nav" role="navigation">
+<div class="offcanvas_actuator" data-toggle="offcanvas" data-target="#sidebar" id="nav_toggle"><button type="button" class="btn"><span class="sr-only">Off-Canvas Navigation Menu Toggle
+                  Off-Canvas Navigation Menu Toggle</span><span class="icon-menu"></span></button><span class="offcanvas_actuator_label" id="translation_icon-menu" tabindex="-1" aria-hidden="true"></span></div><div class="nav_list_wrapper" id="nav_list_wrapper"><nav class="offcanvas_nav" role="navigation"><ul class="nav_breadcrumb" id="ul_left_nav_ancestors"><li itemscope="" itemtype="http://www.data-vocabulary.org/Breadcrumb" itemprop="breadcrumb"><a href="../../../documentation-center.html?s_tid=CRUX_lftnav" itemprop="url"><span itemprop="title">Documentation Home</span></a></li></ul>
+<ul class="nav_disambiguation"><li><a href="../index.html?s_tid=CRUX_lftnav">Simscape Multibody Link</a>
+</li>
+</ul><ul class="nav_scrollspy nav">
+<li class="nav_scrollspy_function"><a href="#responsive_offcanvas">Custom Translation into an XML Multibody Description File</a></li>
+<li class="nav_scrollspy_title" id="SSPY810-section">On this page</li>
+<!--ADD_REFENTRY_TITLE_HERE 11--><li><a href="#brr9896-1" class="intrnllnk">Mapping API Objects from CAD to XML</a><ul class="nav"><li><a href="#brwlddi" class="intrnllnk">Data Required from a CAD Assembly to Create a Simscape Multibody Model</a></li><li><a href="#brwldez" class="intrnllnk">Using the Exporter Functions to Complete the Mapping of CAD to XML</a></li><li><a href="#brwlfvs-1" class="intrnllnk">Body Geometry Files Exported Directly from CAD API</a></li></ul></li><li><a href="#brwlaqr-1" class="intrnllnk">Selecting CAD Assembly Data for Export</a><ul class="nav"><li><a href="#br6qurq" class="intrnllnk">Tracing the Assembly Hierarchy: Nodes and Components</a></li><li><a href="#br6qusw" class="intrnllnk">Identifying and Extracting Component Information</a></li></ul></li><li><a href="#brwlasb-1" class="intrnllnk">Constructing Intermediate API Representations</a><ul class="nav"><li><a href="#br6qu07" class="intrnllnk">Objects Required for Intermediate Representations</a></li><li><a href="#br6qu1k" class="intrnllnk">Putting Objects Together into Intermediate Representations</a></li></ul></li><li><a href="#brwlave-1" class="intrnllnk">Converting Selective API Representations into XML</a></li></ul>
+</nav></div></nav>
+<script src="../../../includes/product/scripts/offcanvas_v2.js"></script></div><!--END.CLASS sidebar-offcanvas-->
+<div class="offcanvas_content_container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sticky_header_container"><div class="horizontal_nav"><div class="horizontal_nav_container"><div class="offcanvas_horizontal_nav"><div class="container-fluid"><div class="row"><div class="col-sm-12 hidden-xs"><nav class="navbar navbar-default" role="navigation" id="subnav"><div><ul class="nav navbar-nav crux_browse"><li id="crux_nav_documentation" class="crux_resource active"><a>All</a></li><li id="crux_nav_example" class="crux_resource"><a href="../examples.html?s_tid=CRUX_topnav">Examples</a></li><li id="crux_nav_function" class="crux_resource"><a href="../referencelist.html?type=function&amp;s_tid=CRUX_topnav">Functions</a></li></ul></div></nav></div><div class="visible-xs"><div class="container-fluid"><div class="row"><div class="col-xs-9"><div class="mobile_crux_nav_trigger"><div class="btn-group"><button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources<span class="icon-arrow-down icon_16"></span></button><ul class="dropdown-menu"><li id="crux_nav_mobile_documentation" class="crux_resource active"><a>All</a></li><li id="crux_nav_mobile_example" class="crux_resource"><a href="../examples.html?s_tid=CRUX_topnav">Examples</a></li><li id="crux_nav_mobile_function" class="crux_resource"><a href="../referencelist.html?type=function&amp;s_tid=CRUX_topnav">Functions</a></li></ul></div></div></div><div class="col-xs-3"><div class="translate_placeholder"></div></div></div></div></div></div></div></div></div></div></div><div class="content_container" id="content_container" itemprop="content">
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12">
+
+<section xmlns="http://www.w3.org/1999/xhtml" id="doc_center_content" lang="en"><div id="pgtype-topic">
+<section itemprop="content"><h2 class="title r2020b" itemprop="title content" id="brr98fb-1">Custom Translation into an XML Multibody Description File</h2><a class="indexterm" name="d122e3644"></a><div class="alert alert-warning"><span class="alert_icon icon-alert-warning"></span><p class="alert_heading"><strong>Warning</strong></p><p>This content is specific to <span class="entity">Simscape&#x2122;
+            Multibody&#x2122;</span> First Generation software. First-generation features are slated to be
+        deprecated and should be avoided. </p></div><section itemprop="content"><h3 class="title" id="brr9896-1">Mapping API Objects from CAD to XML</h3><a class="indexterm" name="d122e3662"></a><p>A complete CAD assembly contains information both relevant and
+not relevant for exporting an XML multibody description file to represent
+your assembly.</p><div class="informalfigure"><div id="d122e3667" class="mediaobject"><p><img src="cadapiobjects.gif" alt="" height="227" width="795"></img></p></div></div><p>For detailed information on the design of a custom export module,
+see section <a href="designing-custom-exporter-modules.html" class="a">Design Custom Exporter Module</a>.</p><section itemprop="content"><h4 class="title" id="brwlddi">Data Required from a CAD Assembly to Create a <span class="entity"><span class="trademark">Simscape</span>             <span class="trademark">Multibody</span></span> Model</h4><p>You obtain the selected assembly data through the CAD platform
+application programming interface (API) in the form of an object or
+a data structure. The data required from an assembly to construct
+a <span class="entity">Simscape
+            Multibody</span> model include:</p><div itemprop="content" id="br6vjdy" class="table_class"><p class="title"><strong class="title">Mapping of Selected Mechanical Data to <span class="entity"><span class="trademark">Simscape</span>
+            <span class="trademark">Multibody</span></span> Model
+Components</strong></p><div class="table-responsive"><table class="table table-condensed" summary="Mapping of Selected Mechanical Data to Simscape Multibody Model Components"><colgroup><col class="tcol1" width="49%"></col><col class="tcol2" width="51%"></col></colgroup><thead><tr><th>Data Selected from CAD Assembly or
+Other External Machine Definition Mapped to...</th><th>...Required <span class="entity">Simscape
+            Multibody</span> Model
+Component</th></tr></thead><tbody><tr><td>Assembly and parts origin</td><td>Ground and World coordinate system</td></tr><tr><td>Assembly and subassembly hierarchy</td><td>Model and subsystem hierarchy</td></tr><tr><td>Part masses and inertia tensors, colors, and body geometry
+file names</td><td>Bodies, including their mass properties, geometries, and colors</td></tr><tr><td>Constraint restrictions on relative positions and motions of
+parts</td><td>Joints between pairs of Bodies<br/>
+Body coordinate
+systems connected to Joints</td></tr></tbody></table></div></div></section><section itemprop="content"><h4 class="title" id="brwldez">Using the Exporter Functions to Complete the Mapping of CAD to XML</h4><p>Refer to the table <a href="translating-machines-from-external-to-physical-modeling-representations-with-the-api.html#br6vjdy" class="intrnllnk">Mapping of Selected Mechanical Data to Simscape Multibody Model Components</a>.
+Using your CAD exporter module, you transform the selected data listed
+in the first column of the table into the form required in the second
+column with the <span class="entity">Simscape
+            Multibody Link</span> API functions and data types.
+You collect the selected data into an intermediate <span class="entity">Simscape
+            Multibody Link</span> API
+object. With the <span class="entity">Simscape
+            Multibody Link</span> API, you then write the intermediate
+API representation to an XML multibody description file.</p><p>See <a href="designing-custom-exporter-modules.html" class="a">Design Custom Exporter Module</a> for information
+on these API functions and data types.</p></section><section itemprop="content"><h4 class="title" id="brwlfvs-1">Body Geometry Files Exported Directly from CAD API</h4><p>For each moving Body in the model, the final <span class="entity">Simscape
+            Multibody</span> model
+requires a separate body geometry file in STEP or STL format. You
+export these body geometry files directly from the CAD API, with file
+names matching the body geometry file names specified in the exported
+XML file. You specify these file names in the <span class="entity">Simscape
+            Multibody Link</span> API
+object.</p><div class="alert alert-info"><span class="alert_icon icon-alert-info-reverse"></span><p class="alert_heading"><strong>Tip</strong></p><p>You need body geometry files only for individual moving CAD
+parts or rigid subassemblies, not for flexible subassemblies.</p></div></section></section><section itemprop="content"><h3 class="title" id="brwlaqr-1">Selecting CAD Assembly Data for Export</h3><section itemprop="content"><h4 class="title" id="br6qurq">Tracing the Assembly Hierarchy: Nodes and Components</h4><p>The assembly data that you need to retrieve through the CAD
+API starts with the assembly-subassembly hierarchy, with nodes. Each
+node in the hierarchical tree is an assembly <span class="emphasis"><em>component</em></span> (a
+part or a subassembly).</p><p>For an individual component, the next component immediately
+up in the hierarchy is its <span class="emphasis"><em>parent</em></span>. All dependent
+components connected below in the hierarchy are its <span class="emphasis"><em>children</em></span>.
+The top parent in the assembly hierarchy is the whole assembly itself.</p></section><section itemprop="content"><h4 class="title" id="br6qusw">Identifying and Extracting Component Information</h4><p>For each component, determine:</p><div class="itemizedlist"><ul><li><p>Its geometric transformation with respect to its parent,
+its mass, its inertia tensor, its body geometry and color (for a part,
+or for a rigid subassembly exported as a single rigid body)</p></li><li><p>The constraints that restrict how its children can
+move with respect to each other</p></li><li><p>Whether or not the component is rigid or flexible;
+that is, whether all its children are to be treated as a single rigid
+body or as individual moving bodies</p></li><li><p>Whether or not the component is <span class="emphasis"><em>fixed</em></span>;
+that is, whether it is rigid or moving with respect to its parent</p></li></ul></div></section></section><section itemprop="content"><h3 class="title" id="brwlasb-1">Constructing Intermediate API Representations</h3><p>Before you can export the CAD assembly, you must construct a
+selective intermediate CAD representation, a collection of objects
+that capture the required CAD data.</p><section itemprop="content"><h4 class="title" id="br6qu07">Objects Required for Intermediate Representations</h4><div class="itemizedlist"><ul><li><p><span class="emphasis"><em>CAD models</em></span> (not to be confused
+with CAD assemblies or <span class="entity">Simscape
+            Multibody</span> models). These represent
+assemblies, subassemblies, and parts.</p></li><li><p>CAD model references</p></li><li><p>Components (parts or subassemblies)</p></li><li><p>Constraints</p></li><li><p>A translator object constructed from all the other
+objects</p></li></ul></div></section><section itemprop="content"><h4 class="title" id="br6qu1k">Putting Objects Together into Intermediate Representations</h4><p>To construct a full CAD representation:</p><div class="orderedlist"><ol style="list-style: decimal;"><li><p>Represent the entire assembly with a CAD model object.</p></li><li><p>Represent child parts and subassemblies with additional
+CAD model objects.</p><p>If a subassembly is flexible (its parts can move with respect
+to each other), the subassembly is a parent to child parts, represented
+by their own CAD model objects.</p></li><li><p>Add child CAD model reference objects to their parent
+CAD model objects, including parent-to-child transforms.</p><p>You might need to repeat steps 1 through 3 recursively until
+you have mapped the entire CAD assembly hierarchy.</p></li><li><p>Represent constraints between components with constraint
+objects. These are also children to parent assembly and subassembly
+objects.</p></li><li><p>Form a single translator object from all these objects,
+referenced by one another in a hierarchy that parallels the original
+assembly hierarchy.</p></li></ol></div><div itemprop="content" id="d122e3867" class="figure"><p class="title"><strong>CAD Assembly and Intermediate API Representation: Parallel
+Hierarchies</strong></p><div class="figure"><div id="d122e3869" class="mediaobject"><p><img src="apiobjecthierarchy.gif" alt="" height="477" width="755"></img></p></div></div></div></section></section><section itemprop="content"><h3 class="title" id="brwlave-1">Converting Selective API Representations into XML</h3><p>The final translator object is the last intermediate form of
+the CAD assembly translation. From this translator object, you create
+the XML multibody description file representing the assembly.</p></section></section>
+    </div><div class="clearfix"></div>
+<div align="center" class="feedbackblock"><iframe id="doc_survey"></iframe></div><script src="../../../includes/shared/scripts/docsurvey.js"></script>
+
+<script>initDocSurvey();</script></section>
+
+
+</div>
+</div>
+</div>
+</div><!--close_0960-->
+<div xmlns="http://www.w3.org/1999/xhtml" class="body_trail_container">
+<section><div class="container-fluid">
+<div class="row">
+<div class="col-xs-12">
+<div class="row"><div class="col-xs-12 col-sm-4"><h2><a href="../index.html?s_cid=doc_ftr">Simscape Multibody Link Documentation</a></h2>
+<ul class="list-unstyled hidden-xs"><li><a href="../examples.html?s_cid=doc_ftr">Examples</a></li>
+<li><a href="../referencelist.html?type=function&amp;s_cid=doc_ftr">Functions</a></li>
+<li><a href="../release-notes.html?s_cid=doc_ftr">Release Notes</a></li>
+<li><a href="https://www.mathworks.com/help/releases/R2020b/pdf_doc/physmod/smlink/index.html?s_cid=doc_ftr">PDF Documentation</a></li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-4"><h2><a href="https://www.mathworks.com/support.html?s_cid=doc_ftr">Support</a></h2>
+<ul class="list-unstyled hidden-xs"><li><a href="https://www.mathworks.com/matlabcentral/answers/index?s_cid=doc_ftr">MATLAB Answers</a></li><li><a href="https://www.mathworks.com/support/install-matlab.html?s_cid=doc_ftr">Installation Help</a></li><li><a href="https://www.mathworks.com/support/bugreports/?s_cid=doc_ftr">Bug Reports</a></li><li><a href="https://www.mathworks.com/support/requirements/product-requirements-platform-availability-list.html?s_cid=doc_ftr">Product Requirements</a></li><li><a href="https://www.mathworks.com/downloads/?s_cid=doc_ftr">Software Downloads</a></li></ul>
+</div>
+</div>
+</div>
+</div>
+</div><!--END.CLASS container-fluid-->
+</section></div><!--END.CLASS body_trail_container-->
+<footer xmlns="http://www.w3.org/1999/xhtml" id="footer" class="bs-footer">
+<div class="container-fluid">
+<div class="footer">
+<div class="row">
+<div class="col-xs-12">
+<p class="copyright">© 1994-2020 The MathWorks, Inc.</p>
+<ul class="footernav"><li class="footernav_help"><a href="MATLAB:web(matlab.internal.licenseAgreement)">Terms of Use</a></li><li class="footernav_patents"><a href="MATLAB:web([matlabroot '/patents.txt'])">Patents</a></li><li class="footernav_trademarks"><a href="MATLAB:web([matlabroot '/trademarks.txt'])">Trademarks</a></li><li class="footernav_piracy"><a href="MATLAB:web([docroot '/acknowledgments.html'])">Acknowledgments</a></li></ul></div>
+</div>
+</div>
+</div>
+</footer>
+</div><!--close row-offcanvas-->
+</div><!--close_0970-->
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" itemscope itemtype="http://www.mathworks.com/help/schema/MathWorksDocPage">
+<head>
+<meta xmlns="http://www.w3.org/1999/xhtml" charset="utf-8"></meta>
+<meta xmlns="http://www.w3.org/1999/xhtml" name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+<meta xmlns="http://www.w3.org/1999/xhtml" http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+<title>Export a PTC Creo Robot Assembly Model</title>
+<script xmlns="http://www.w3.org/1999/xhtml" type="application/ld+json">
+      {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement":
+      [{
+          "@type": "ListItem",
+          "position": 1,
+
+          "item": {
+          "@id": "../index.html",
+          "name": "Simscape Multibody Link"
+}
+
+          } 
+        ,
+        {
+          "@type": "ListItem",
+          "position": 2,
+
+          "item": {
+          "@id": "../creo-proengineer.html",
+          "name": "PTC Creo"
+}
+
+          }]
+      }</script><script xmlns="http://www.w3.org/1999/xhtml" type="application/ld+json">
+        {
+        "@context": "http://schema.org",
+        "@type": "ItemList",
+          "name": "VisibleBreadcrumbs",
+
+        "itemListElement":
+        [
+        "creo-proengineer"
+        ],
+        "itemListOrder": "http://schema.org/ItemListOrderAscending"
+        }
+        </script><link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/bootstrap.min.css" rel="stylesheet" type="text/css"></link>
+
+
+  <meta xmlns="http://www.w3.org/1999/xhtml" http-equiv="Content-Script-Type" content="text/javascript"></meta>
+<meta xmlns="http://www.w3.org/1999/xhtml" name="toctype" itemprop="pagetype" content="ug"></meta>
+<meta xmlns="http://www.w3.org/1999/xhtml" name="infotype" itemprop="infotype" content="ex"></meta>
+
+<meta xmlns="http://www.w3.org/1999/xhtml" name="description" itemprop="description" content="Generate an XML multibody description file for a robotic arm assembly."></meta><script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/product/scripts/jquery/jquery-latest.js"></script>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/site6.css" rel="stylesheet" type="text/css"></link>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/site6_lg.css" rel="stylesheet" media="screen and (min-width: 1200px)"></link>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/site6_md.css" rel="stylesheet" media="screen and (min-width: 992px) and (max-width: 1199px)"></link>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/site6_sm+xs.css" rel="stylesheet" media="screen and (max-width: 991px)"></link>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/site6_sm.css" rel="stylesheet" media="screen and (min-width: 768px) and (max-width: 991px)"></link>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/site6_xs.css" rel="stylesheet" media="screen and (max-width: 767px)"></link>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/site6_offcanvas_v2.css" rel="stylesheet" type="text/css"></link>
+
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/shared/scripts/l10n.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/shared/scripts/docscripts.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/shared/scripts/f1help.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/product/scripts/docscripts.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/shared/scripts/mw.imageanimation.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/shared/scripts/jquery.highlight.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/product/scripts/underscore-min.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/product/scripts/examples.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/product/scripts/use_platform_screenshots.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/product/scripts/suggest.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/shared/scripts/overload.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/shared/scripts/helpservices.js"></script>
+
+
+
+
+
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/product/scripts/jquery/jquery.mobile.custom.min.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/product/scripts/bootstrap.min.js"></script>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/product/scripts/global.js"></script>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/doc_center_base.css" rel="stylesheet" type="text/css"></link>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/doc_center_installed.css" rel="stylesheet" type="text/css"></link>
+<link xmlns="http://www.w3.org/1999/xhtml" href="../../../includes/product/css/doc_center_print.css" rel="stylesheet" type="text/css" media="print"></link>
+<script xmlns="http://www.w3.org/1999/xhtml" src="../../../includes/shared/equationrenderer/release/MathRenderer.js"></script>
+</head>
+<body id="responsive_offcanvas">
+<div xmlns="http://www.w3.org/1999/xhtml" id="doc_header_spacer" class="header"></div>
+<div xmlns="http://www.w3.org/1999/xhtml" class="section_header level_3"><div class="container-fluid"><div class="row" id="mobile_search_row"><div class="col-sm-6 col-md-7 has_horizontal_local_nav" id="section_header_title"><div class="section_header_content"><div class="section_header_title"><h1><a href="../../../documentation-center.html">Documentation</a></h1></div></div></div><div class="col-xs-12 col-sm-6 col-md-5" id="mobile_search"><div class="search_nested_content_container"><form id="docsearch_form" name="docsearch_form" method="get" data-release="R2020b" data-language="en" action="../../../templates/searchresults.html"><div class="input-group tokenized_search_field"><label class="sr-only">Search Help</label><input type="text" class="form-control conjoined_search" autocomplete="off" name="qdoc" placeholder="Search Help" id="docsearch"> </input><div class="input-group-btn"><button type="submit" name="submitsearch" id="submitsearch" class="btn icon-search btn_search_adjacent btn_search icon_16" tabindex="-1"></button></div></div></form></div><button class="btn icon-remove btn_search pull-right icon_32 visible-xs" data-toggle="collapse" href="#mobile_search" aria-expanded="false" aria-controls="mobile_search"></button></div><div class="visible-xs" id="search_actuator"><button class="btn icon-search btn_search pull-right icon_16" data-toggle="collapse" href="#mobile_search" aria-expanded="false" aria-controls="mobile_search"></button></div></div></div></div><div class="row-offcanvas row-offcanvas-left">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sidebar-offcanvas" id="sidebar">
+<nav class="offcanvas_nav" role="navigation">
+<div class="offcanvas_actuator" data-toggle="offcanvas" data-target="#sidebar" id="nav_toggle"><button type="button" class="btn"><span class="sr-only">Off-Canvas Navigation Menu Toggle
+                  Off-Canvas Navigation Menu Toggle</span><span class="icon-menu"></span></button><span class="offcanvas_actuator_label" id="translation_icon-menu" tabindex="-1" aria-hidden="true"></span></div><div class="nav_list_wrapper" id="nav_list_wrapper"><nav class="offcanvas_nav" role="navigation"><ul class="nav_breadcrumb" id="ul_left_nav_ancestors"><li itemscope="" itemtype="http://www.data-vocabulary.org/Breadcrumb" itemprop="breadcrumb"><a href="../../../documentation-center.html?s_tid=CRUX_lftnav" itemprop="url"><span itemprop="title">Documentation Home</span></a></li></ul>
+<ul class="nav_disambiguation"><li><a href="../index.html?s_tid=CRUX_lftnav">Simscape Multibody Link</a>
+</li>
+<li itemscope="" itemtype="http://www.data-vocabulary.org/Breadcrumb" itemprop="breadcrumb"><a href="../creo-proengineer.html?s_tid=CRUX_lftnav" itemprop="url"><span itemprop="title">PTC Creo</span></a></li></ul><ul class="nav_scrollspy nav">
+<li class="nav_scrollspy_function"><a href="#responsive_offcanvas">Export a PTC Creo Robot Assembly Model</a></li>
+<li class="nav_scrollspy_title" id="SSPY810-section">On this page</li>
+<!--ADD_REFENTRY_TITLE_HERE 11--><li><a href="#btms6_5-18" class="intrnllnk">Example Requirements</a></li><li><a href="#btms6_5-19" class="intrnllnk">Open the Assembly Model</a></li><li><a href="#btms6_5-20" class="intrnllnk">Export the Model</a></li><li><a href="#btms6_5-21" class="intrnllnk">Check the Exported Files</a></li><li><a href="#btms6_5-22" class="intrnllnk">About the Example CAD Files</a></li><li><a href="#btms6_5-23" class="intrnllnk">About CAD Export</a></li></ul>
+</nav></div></nav>
+<script src="../../../includes/product/scripts/offcanvas_v2.js"></script></div><!--END.CLASS sidebar-offcanvas-->
+<div class="offcanvas_content_container">
+<div xmlns="http://www.w3.org/1999/xhtml" class="sticky_header_container"><div class="horizontal_nav"><div class="horizontal_nav_container"><div class="offcanvas_horizontal_nav"><div class="container-fluid"><div class="row"><div class="col-sm-12 hidden-xs"><nav class="navbar navbar-default" role="navigation" id="subnav"><div><ul class="nav navbar-nav crux_browse"><li id="crux_nav_documentation" class="crux_resource active"><a>All</a></li><li id="crux_nav_example" class="crux_resource"><a href="../examples.html?category=creo-proengineer&amp;s_tid=CRUX_topnav">Examples</a></li><li id="crux_nav_function" class="crux_resource"><a href="../referencelist.html?type=function&amp;category=creo-proengineer&amp;s_tid=CRUX_topnav">Functions</a></li></ul></div></nav></div><div class="visible-xs"><div class="container-fluid"><div class="row"><div class="col-xs-9"><div class="mobile_crux_nav_trigger"><div class="btn-group"><button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Resources<span class="icon-arrow-down icon_16"></span></button><ul class="dropdown-menu"><li id="crux_nav_mobile_documentation" class="crux_resource active"><a>All</a></li><li id="crux_nav_mobile_example" class="crux_resource"><a href="../examples.html?category=creo-proengineer&amp;s_tid=CRUX_topnav">Examples</a></li><li id="crux_nav_mobile_function" class="crux_resource"><a href="../referencelist.html?type=function&amp;category=creo-proengineer&amp;s_tid=CRUX_topnav">Functions</a></li></ul></div></div></div><div class="col-xs-3"><div class="translate_placeholder"></div></div></div></div></div></div></div></div></div></div></div><div class="content_container" id="content_container" itemprop="content">
+<div class="container-fluid">
+<div class="row">
+<div class="col-xs-12">
+
+<section xmlns="http://www.w3.org/1999/xhtml" id="doc_center_content" lang="en"><div id="pgtype-topic">
+<section itemprop="content"><h2 class="title r2020b" itemprop="title content" id="btms6_5-17">Export a <span class="trademark entity">PTC</span> <span class="trademark entity">Creo</span> Robot Assembly Model</h2><p>In this example, you export a Creo&#x2122; (Pro/ENGINEER<sup>&#x00AE;</sup>) CAD
+assembly that represents a robot arm. The export procedure generates
+one XML file and a set of geometry files that you can import into <span class="entity">Simscape&#x2122;
+            Multibody&#x2122;</span> to
+generate a new model. </p><p>The example begins with a procedure to export the CAD assembly.
+Information on the robot CAD files and CAD Export follows the export
+procedure. To import the robot assembly into a <span class="entity">Simscape
+            Multibody</span> model,
+see <a href="../../../physmod/sm/ug/import-robot-arm-model.html" class="a">Import a Robotic Arm CAD Model</a>.</p><p>The following figure shows the robot CAD assembly that you export
+in this example.</p><p></p>
+<div class="informalfigure"><div id="d122e2097" class="mediaobject"><p><img src="sm_robot_proe_screen.png" alt="" height="182" width="286"></img></p></div></div><p></p><section itemprop="content"><h3 class="title" id="btms6_5-18">Example Requirements</h3><p>To successfully complete this example, you must meet the following
+requirements:</p><div class="itemizedlist"><ul><li><p>Have the latest version of <span class="entity">Simscape
+            Multibody Link</span> installed
+on your machine.</p></li><li><p>Have completed the linking procedure for your Creo installation.
+The linking procedure adds a <span class="entity">Simscape
+            Multibody Link</span> add-on tool to
+the installation.</p></li><li><p>Have access to the robot example files that accompany
+the <span class="entity">Simscape
+            Multibody Link</span> installation.</p></li></ul></div></section><section itemprop="content"><h3 class="title" id="btms6_5-19">Open the Assembly Model</h3><p>Before you can export the robot assembly, you must load the
+assembly into Creo.</p><div class="orderedlist"><ol style="list-style: decimal;"><li><p>Open Creo on your machine.</p></li><li><p>Select <strong class="guimenuitem">File</strong> &gt; <strong class="guimenuitem">Open</strong></p></li><li><p>Navigate to the file directory that contains the robot
+CAD files.</p><div class="alert alert-info"><span class="alert_icon icon-alert-info-reverse"></span><p class="alert_heading"><strong>Note</strong></p><p>The directory that contains the robot CAD files for the Pro/ENGINEER platform
+is <div class="code_responsive"><pre class="programlisting">&lt;MATLAB Root&gt;\toolbox\physmod\smlink\smlinkdemos\proe\robot</pre></div></p></div></li><li><p>Select file <code class="literal">robot.ASM</code>.</p></li><li><p>Click <strong class="guilabel">Open</strong>.</p></li></ol></div><p>The CAD platform opens the robot assembly.</p></section><section itemprop="content"><h3 class="title" id="btms6_5-20">Export the Model</h3><p>Once you successfully open the robot CAD assembly in your Creo installation,
+you can export the assembly in format:</p><div class="orderedlist"><ol style="list-style: decimal;"><li><p>In the Creo toolbar, click <strong class="guilabel">Tools</strong>.</p></li><li><p>Select <strong class="guimenuitem">Simscape Multibody
+Link</strong> &gt; <strong class="guimenuitem">Export</strong> and
+click <strong class="guilabel">Simscape Multibody</strong> to export in a format
+compatible with the latest <span class="entity">Simscape
+            Multibody</span> technology.</p></li><li><p>In the <strong class="guilabel">File name</strong> field of the <strong class="guilabel">Select
+Folder</strong> dialog box, enter select a directory to export the
+files into.</p><div class="alert alert-info"><span class="alert_icon icon-alert-info-reverse"></span><p class="alert_heading"><strong>Note</strong></p><p>Do not enter a name in the <strong class="guilabel">File name</strong> field.
+The field should contain only a dot <code class="literal">.</code></p></div></li><li><p>Click <strong class="guilabel">Open</strong>.</p></li><li><p>In the new dialog box, enter file name <code class="literal">sm_robot</code> and
+click the green arrow.</p><div class="alert alert-info"><span class="alert_icon icon-alert-info-reverse"></span><p class="alert_heading"><strong>Note</strong></p><p><span class="entity">Simscape
+            Multibody Link</span> generates a new XML multibody description
+file and a set of geometry files that you can import into a model.</p></div></li></ol></div></section><section itemprop="content"><h3 class="title" id="btms6_5-21">Check the Exported Files</h3><p>Confirm the following files exist in the export directory you
+specified:</p><p><a href="#" onclick="return toggleexpander('d122e2248_block','d122e2248_expandable_text');"><img style="border:0;" id="d122e2248_expandable_text" src="../../../includes/product/images/doc_center/arrow_right.gif"></img></a>&nbsp;<a href="#" onclick="return toggleexpander('d122e2248_block','d122e2248_expandable_text');">XML Multibody Description File</a></p><div class="expander" style="display:none; padding-left:4px;" id="d122e2248_block"><div class="table-responsive"><table class="table table-condensed"><colgroup><col class="tcol1" width="33%"></col><col class="tcol2" width="33%"></col><col class="tcol3" width="33%"></col></colgroup><thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>sm_robot.xml</td><td>XML multibody description file</td><td>The XML file defines the structure of the CAD assembly. The
+file also contains the parameters required to model each part in the
+CAD assembly.</td></tr></tbody></table></div></div><p><a href="#" onclick="return toggleexpander('d122e2274_block','d122e2274_expandable_text');"><img style="border:0;" id="d122e2274_expandable_text" src="../../../includes/product/images/doc_center/arrow_right.gif"></img></a>&nbsp;<a href="#" onclick="return toggleexpander('d122e2274_block','d122e2274_expandable_text');">Geometry Files</a></p><div class="expander" style="display:none; padding-left:4px;" id="d122e2274_block"><div class="alert alert-info"><span class="alert_icon icon-alert-info-reverse"></span><p class="alert_heading"><strong>Note</strong></p><p>In the <strong class="guilabel">Name</strong> column, &lt;identifier&gt;
+is a set of numeric and alphabetic characters that identifies each
+file.</p></div><div class="table-responsive"><table class="table table-condensed"><colgroup><col class="tcol1" width="33%"></col><col class="tcol2" width="33%"></col><col class="tcol3" width="33%"></col></colgroup><thead><tr><th>Name</th><th>Type</th><th>Description</th></tr></thead><tbody><tr><td>base_prt</td><td rowspan="9">Geometry files </td><td rowspan="9">Provide the 3-D surface shapes of the CAD parts</td></tr><tr><td>fingertips_prt</td></tr><tr><td>firstfingerlink_prt</td></tr><tr><td>firstfingerlinkl_prt</td></tr><tr><td>forearm_prt</td></tr><tr><td>metacarples_prt</td></tr><tr><td>secondfingerlink_prt</td></tr><tr><td>upperarm_prt</td></tr><tr><td>wrist_prt</td></tr></tbody></table></div></div></section><section itemprop="content"><h3 class="title" id="btms6_5-22">About the Example CAD Files</h3><p>The CAD assembly files are present in your <span class="entity">Simscape
+            Multibody Link</span> installation.
+You can access the files in the following directory:<div class="code_responsive"><pre class="programlisting">&lt;MATLAB Root&gt;\matlab\toolbox\physmod\smlink\smlinkdemos\...
+...proe\robot</pre></div>Substitute &lt;MATLAB Root&gt; with
+the root directory of your MATLAB<sup>&#x00AE;</sup> installation. </p><div class="alert alert-info"><span class="alert_icon icon-alert-info-reverse"></span><p class="alert_heading"><strong>Note</strong></p><p>If you are not sure what your MATLAB root directory is,
+at the MATLAB command line enter <code class="literal">matlabroot</code>. MATLAB returns
+the root directory for your installation.</p></div><p>The <code class="literal">\proe\robot</code> directory contains a set
+of CAD files that define each CAD part and CAD assembly. Part file
+names contain the file extension .PRT. Assembly file names contain
+the extension .ASM. </p><p>The robot assembly contains nine parts and two assemblies: robot.ASM
+and grip.ASM. File robot.ASM models the robot root assembly. File
+grip.ASM models the robot grip subassembly.</p><p>The following table lists all files the example requires.</p>
+<div class="table-responsive"><table class="table table-condensed"><colgroup><col class="tcol1" width="50%"></col><col class="tcol2" width="50%"></col></colgroup><thead><tr><th>File Name</th><th>Type</th></tr></thead><tbody><tr><td>robot</td><td rowspan="2">Assembly</td></tr><tr><td>grip</td></tr><tr><td>wrist</td><td rowspan="9">Part</td></tr><tr><td>upperarm</td></tr><tr><td>secondfingerlink</td></tr><tr><td>metacarples</td></tr><tr><td>firstfingerlinkL</td></tr><tr><td>forearm</td></tr><tr><td>firstfingerlink</td></tr><tr><td>fingertips</td></tr><tr><td>base</td></tr></tbody></table></div><p>
+</p></section><section itemprop="content"><h3 class="title" id="btms6_5-23">About CAD Export</h3><p>The CAD export procedure generates one XML multibody description
+file and a set of geometry files. The XML file contains the structure
+of the assembly and the parameters that define each part. The geometry
+files define the 3-D surface shapes of the CAD parts. Once the export
+procedure is complete, you can import the XML multibody description
+file into <span class="entity">Simscape
+            Multibody</span>. <span class="entity">Simscape
+            Multibody</span> uses the file to
+automatically generate a new <span class="entity">Simscape
+            Multibody</span> model.</p></section></section>
+    </div><div class="clearfix"></div>
+<div align="center" class="feedbackblock"><iframe id="doc_survey"></iframe></div><script src="../../../includes/shared/scripts/docsurvey.js"></script>
+
+<script>initDocSurvey();</script></section>
+
+
+</div>
+</div>
+</div>
+</div><!--close_0960-->
+<div xmlns="http://www.w3.org/1999/xhtml" class="body_trail_container">
+<section><div class="container-fluid">
+<div class="row">
+<div class="col-xs-12">
+<div class="row"><div class="col-xs-12 col-sm-4"><h2><a href="../index.html?s_cid=doc_ftr">Simscape Multibody Link Documentation</a></h2>
+<ul class="list-unstyled hidden-xs"><li><a href="../examples.html?s_cid=doc_ftr">Examples</a></li>
+<li><a href="../referencelist.html?type=function&amp;s_cid=doc_ftr">Functions</a></li>
+<li><a href="../release-notes.html?s_cid=doc_ftr">Release Notes</a></li>
+<li><a href="https://www.mathworks.com/help/releases/R2020b/pdf_doc/physmod/smlink/index.html?s_cid=doc_ftr">PDF Documentation</a></li>
+</ul>
+</div>
+<div class="col-xs-12 col-sm-4"><h2><a href="https://www.mathworks.com/support.html?s_cid=doc_ftr">Support</a></h2>
+<ul class="list-unstyled hidden-xs"><li><a href="https://www.mathworks.com/matlabcentral/answers/index?s_cid=doc_ftr">MATLAB Answers</a></li><li><a href="https://www.mathworks.com/support/install-matlab.html?s_cid=doc_ftr">Installation Help</a></li><li><a href="https://www.mathworks.com/support/bugreports/?s_cid=doc_ftr">Bug Reports</a></li><li><a href="https://www.mathworks.com/support/requirements/product-requirements-platform-availability-list.html?s_cid=doc_ftr">Product Requirements</a></li><li><a href="https://www.mathworks.com/downloads/?s_cid=doc_ftr">Software Downloads</a></li></ul>
+</div>
+</div>
+</div>
+</div>
+</div><!--END.CLASS container-fluid-->
+</section></div><!--END.CLASS body_trail_container-->
+<footer xmlns="http://www.w3.org/1999/xhtml" id="footer" class="bs-footer">
+<div class="container-fluid">
+<div class="footer">
+<div class="row">
+<div class="col-xs-12">
+<p class="copyright">© 1994-2020 The MathWorks, Inc.</p>
+<ul class="footernav"><li class="footernav_help"><a href="MATLAB:web(matlab.internal.licenseAgreement)">Terms of Use</a></li><li class="footernav_patents"><a href="MATLAB:web([matlabroot '/patents.txt'])">Patents</a></li><li class="footernav_trademarks"><a href="MATLAB:web([matlabroot '/trademarks.txt'])">Trademarks</a></li><li class="footernav_piracy"><a href="MATLAB:web([docroot '/acknowledgments.html'])">Acknowledgments</a></li></ul></div>
+</div>
+</div>
+</div>
+</footer>
+</div><!--close row-offcanvas-->
+</div><!--close_0970-->
+</body>
+</html>

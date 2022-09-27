@@ -1,0 +1,1224 @@
+{ "schema" : "referenceapi_schema.json",
+  "schemaVersion" : "1.0",
+  "productName" : "Simscape Multibody Link",
+  "baseCode" : "MS",
+  "helpFolder" : "smlink",
+  "helpLocation" : "physmod\/smlink",
+  "refItems" : [
+
+    { "href" : "ref\/pmit_add_cadcs.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "pmit_add_cadcs",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Add coordinate system to handle object of PmitCadModelH class",
+      "introduced" : "R2010a",
+      "description" : "This MATLAB function returns an error status PmitError.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "PmitError = pmit_add_cadcs(PmitCadModelH pmitCadModelH, PmitCadCSH pmitCadCSH)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "pmitCadModelH",
+          "purpose" : "" },
+        
+        { "name" : "pmitCadCSH",
+          "purpose" : "" } ],
+      "seealso" : 
+      [ 
+        { "url" : "pmitcadcsh.html",
+          "name" : "PmitCadCSH" },
+        
+        { "url" : "pmit_create_cadcs.html",
+          "name" : "pmit_create_cadcs" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" } ] },
+    { "href" : "ref\/pmit_add_constrain.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "pmit_add_constrain",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Add constraint to handle object of PmitCadModelH class",
+      "introduced" : "R2009b",
+      "description" : "This MATLAB function returns an error status PmitError.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "PmitError = pmit_add_constrain(PmitCadModelH pmitCadModelH, PmitConstrainH pmitConstrainH)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "pmitCadModelH",
+          "purpose" : "" },
+        
+        { "name" : "pmitConstrainH",
+          "purpose" : "" } ],
+      "seealso" : 
+      [ 
+        { "url" : "pmitcadmodelh.html",
+          "name" : "PmitCadModelH" },
+        
+        { "url" : "pmitconstrainh.html",
+          "name" : "PmitConstrainH" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" } ] },
+    { "href" : "ref\/pmit_add_refincadmodel.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "pmit_add_refincadmodel",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Add object of PmitCadModelRefH class to object of PmitCadModelH class",
+      "introduced" : "R2009b",
+      "description" : "This MATLAB function returns an error status PmitError.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "PmitError = pmit_add_refincadmodel(PmitCadModelH pmitCadModelH, PmitCadModelRefH pmitCadModelrefH)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "pmitCadModelH",
+          "purpose" : "" },
+        
+        { "name" : "pmitCadModelrefH",
+          "purpose" : "" } ],
+      "seealso" : 
+      [ 
+        { "url" : "pmitcadmodelh.html",
+          "name" : "PmitCadModelH" },
+        
+        { "url" : "pmitcadmodelrefh.html",
+          "name" : "PmitCadModelRefH" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" } ] },
+    { "href" : "ref\/pmit_add_refincomp.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "pmit_add_refincomp",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Add object of PmitCadModelRefH class at end of object of PmitAssemCompH class",
+      "introduced" : "R2009b",
+      "description" : "This MATLAB function returns an error status PmitError.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "PmitError = pmit_add_refincomp(PmitAssemCompH pmitAssemComp, PmitCadModelRefH pmitCadModelrefH)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "pmitAssemComp",
+          "purpose" : "" },
+        
+        { "name" : "pmitCadModelrefH",
+          "purpose" : "" } ],
+      "seealso" : 
+      [ 
+        { "url" : "pmitassemcomph.html",
+          "name" : "PmitAssemCompH" },
+        
+        { "url" : "pmitcadmodelrefh.html",
+          "name" : "PmitCadModelRefH" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" } ] },
+    { "href" : "ref\/pmit_cadmodel_setfilename.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "pmit_cadmodel_setfilename",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Specify body geometry file name for handle object of PmitCadModelH class",
+      "introduced" : "R2009b",
+      "description" : "This MATLAB function returns an error status PmitError.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "PmitError = pmit_cadmodel_setfilename(PmitCadModelH pmitCadModelH, const char* fileName)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "pmitCadModelH",
+          "purpose" : "" },
+        
+        { "name" : "fileName",
+          "purpose" : "" } ],
+      "seealso" : 
+      [ 
+        { "url" : "pmitcadmodelh.html",
+          "name" : "PmitCadModelH" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" },
+        
+        { "url" : "pmit_set_units.html",
+          "name" : "pmit_set_units" } ] },
+    { "href" : "ref\/pmit_cadmodelref_getcadmodel.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "pmit_cadmodelref_getcadmodel",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Get object of PmitCadModelH class from children of object of PmitCadModelRefH class",
+      "introduced" : "R2009b",
+      "description" : "This MATLAB function returns an error status PmitError.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "PmitError = pmit_cadmodelref_getcadmodel(PmitCadModelH* pmitCadModelHOut, PmitCadModelRefH cadModelRefH)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "cadModelRefH",
+          "purpose" : "" } ],
+      "outputs" : 
+      [ 
+        { "name" : "pmitCadModelHOut",
+          "purpose" : "" } ],
+      "seealso" : 
+      [ 
+        { "url" : "pmitcadmodelh.html",
+          "name" : "PmitCadModelH" },
+        
+        { "url" : "pmitcadmodelrefh.html",
+          "name" : "PmitCadModelRefH" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" } ] },
+    { "href" : "ref\/pmit_connectto_matlab.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "pmit_connectto_matlab",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Connect to MATLAB session",
+      "introduced" : "R2009b",
+      "description" : "This MATLAB function returns an error status PmitError.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "PmitError = pmit_connectto_matlab()" ] } ],
+      "seealso" : 
+      [ 
+        { "url" : "pmit_disconnectfrom_matlab.html",
+          "name" : "pmit_disconnectfrom_matlab" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" },
+        
+        { "url" : "pmit_open_demo.html",
+          "name" : "pmit_open_demo" },
+        
+        { "url" : "pmit_open_help.html",
+          "name" : "pmit_open_help" } ] },
+    { "href" : "ref\/pmit_create_assemcomp.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "pmit_create_assemcomp",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Create object of PmitAssemCompH class",
+      "introduced" : "R2009b",
+      "description" : "This MATLAB function returns an error status PmitError.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "PmitError = pmit_create_assemcomp(PmitAssemCompH* const pmitAssemCompHOut)" ] } ],
+      "outputs" : 
+      [ 
+        { "name" : "pmitAssemCompHOut",
+          "purpose" : "" } ],
+      "seealso" : 
+      [ 
+        { "url" : "pmitassemcomph.html",
+          "name" : "PmitAssemCompH" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" } ] },
+    { "href" : "ref\/pmit_create_assemcomp_fromstr.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "pmit_create_assemcomp_fromstr",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Create object of PmitAssemCompH class",
+      "introduced" : "R2009b",
+      "description" : "PmitError = pmit_create_assemcomp_fromstr(PmitAssemCompH* const pmitAssemCompHOut, const char* compName, PmitCadModelH parentModelH) returns an error status PmitError.",
+      "inputs" : 
+      [ 
+        { "name" : "compName",
+          "purpose" : "" },
+        
+        { "name" : "parentModelH",
+          "purpose" : "" } ],
+      "outputs" : 
+      [ 
+        { "name" : "pmitAssemCompHOut",
+          "purpose" : "" } ],
+      "seealso" : 
+      [ 
+        { "url" : "pmitassemcomph.html",
+          "name" : "PmitAssemCompH" },
+        
+        { "url" : "pmitcadmodelh.html",
+          "name" : "PmitCadModelH" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" } ] },
+    { "href" : "ref\/pmit_create_cad2sm.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "pmit_create_cad2sm",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Create object of PmitCad2SMH class",
+      "introduced" : "R2009b",
+      "description" : "This MATLAB function returns an error status PmitError.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "PmitError = pmit_create_cad2sm(PmitCad2SMH* const pmitCad2SMHOut, PmitCadModelH const pmitCadModelH, const char* createdUsing, const char* createdFrom, const char* createdOn, const char* createdBy, const char* name)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "pmitCadModelH",
+          "purpose" : "" },
+        
+        { "name" : "createdUsing",
+          "purpose" : "" },
+        
+        { "name" : "createdFrom",
+          "purpose" : "" },
+        
+        { "name" : "createdOn",
+          "purpose" : "" },
+        
+        { "name" : "createdBy",
+          "purpose" : "" },
+        
+        { "name" : "name",
+          "purpose" : "" } ],
+      "outputs" : 
+      [ 
+        { "name" : "pmitCad2SMHOut",
+          "purpose" : "" } ],
+      "seealso" : 
+      [ 
+        { "url" : "pmitcad2smh.html",
+          "name" : "PmitCad2SMH" },
+        
+        { "url" : "pmitcadmodelh.html",
+          "name" : "PmitCadModelH" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" },
+        
+        { "url" : "pmit_write_xml.html",
+          "name" : "pmit_write_xml" } ] },
+    { "href" : "ref\/pmit_create_cadcs.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "pmit_create_cadcs",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Create object of PmitCadCSH class",
+      "introduced" : "R2010a",
+      "description" : "This MATLAB function returns an error status PmitError.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "PmitError = pmit_create_cadcs(PmitCadCSH* const pmitCadCSHOut, const char* name, const char* nodeID, double rotation[9], double trans[3])" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "name",
+          "purpose" : "" },
+        
+        { "name" : "nodeID",
+          "purpose" : "" },
+        
+        { "name" : "rotation",
+          "purpose" : "" },
+        
+        { "name" : "trans",
+          "purpose" : "" } ],
+      "outputs" : 
+      [ 
+        { "name" : "pmitCadCSHOut",
+          "purpose" : "" } ],
+      "seealso" : 
+      [ 
+        { "url" : "pmit_add_cadcs.html",
+          "name" : "pmit_add_cadcs" },
+        
+        { "url" : "pmitcadcsh.html",
+          "name" : "PmitCadCSH" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" } ] },
+    { "href" : "ref\/pmit_create_cadmodel.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "pmit_create_cadmodel",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Create object of PmitCadModelH class",
+      "introduced" : "R2009b",
+      "description" : "This MATLAB function returns an error status PmitError.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "PmitError = pmit_create_cadmodel(PmitCadModelH* const pmitCadModelHOut, const char* name, double mass, const double inertia[6], const double cg[3], double volume, double sarea, const char* fileName, const PmitVisMatProp* matprops)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "name",
+          "purpose" : "" },
+        
+        { "name" : "mass",
+          "purpose" : "" },
+        
+        { "name" : "inertia",
+          "purpose" : "" },
+        
+        { "name" : "cg",
+          "purpose" : "" },
+        
+        { "name" : "volume",
+          "purpose" : "" },
+        
+        { "name" : "sarea",
+          "purpose" : "" },
+        
+        { "name" : "fileName",
+          "purpose" : "" },
+        
+        { "name" : "matprops",
+          "purpose" : "" } ],
+      "outputs" : 
+      [ 
+        { "name" : "pmitCadModelHOut",
+          "purpose" : "" } ],
+      "seealso" : 
+      [ 
+        { "url" : "pmitcadmodelh.html",
+          "name" : "PmitCadModelH" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" },
+        
+        { "url" : "pmit_set_units.html",
+          "name" : "pmit_set_units" },
+        
+        { "url" : "pmitvismatprop.html",
+          "name" : "PmitVisMatProp" } ] },
+    { "href" : "ref\/pmit_create_cadmodelref.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "pmit_create_cadmodelref",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Create object of PmitCadModelRefH class",
+      "introduced" : "R2009b",
+      "description" : "This MATLAB function returns an error status PmitError.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "PmitError = pmit_create_cadmodelref(PmitCadModelRefH* const pmitCadModelRefHOut, const char* name, const char* nodeID, PmitCadModelH pmitCadModelH, double rotation[9], double trans[3], double scale, int isFlexible, int isFixed, const PmitVisMatProp* matprops)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "name",
+          "purpose" : "" },
+        
+        { "name" : "nodeID",
+          "purpose" : "" },
+        
+        { "name" : "pmitCadModelH",
+          "purpose" : "" },
+        
+        { "name" : "rotation",
+          "purpose" : "" },
+        
+        { "name" : "trans",
+          "purpose" : "" },
+        
+        { "name" : "scale",
+          "purpose" : "" },
+        
+        { "name" : "isFlexible",
+          "purpose" : "" },
+        
+        { "name" : "isFixed",
+          "purpose" : "" },
+        
+        { "name" : "matprops",
+          "purpose" : "" } ],
+      "outputs" : 
+      [ 
+        { "name" : "pmitCadModelRefHOut",
+          "purpose" : "" } ],
+      "seealso" : 
+      [ 
+        { "url" : "pmitcadmodelh.html",
+          "name" : "PmitCadModelH" },
+        
+        { "url" : "pmitcadmodelrefh.html",
+          "name" : "PmitCadModelRefH" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" },
+        
+        { "url" : "pmitvismatprop.html",
+          "name" : "PmitVisMatProp" } ] },
+    { "href" : "ref\/pmit_create_constrain.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "pmit_create_constrain",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Create object of PmitConstrainH class",
+      "introduced" : "R2009b",
+      "description" : "PmitError = pmit_create_constrain(PmitConstrainH* const pmitConstrainhOut, const char* name, PmitConstrainType type, PmitAssemCompH body1Comp, PmitAssemCompH body2Comp, PmitGeomType body1Type, PmitGeomType body2Type, const double body1Loc, const double body1Axis, const double body2Loc, const double body2Axis) returns an error status PmitError.",
+      "inputs" : 
+      [ 
+        { "name" : "name",
+          "purpose" : "" },
+        
+        { "name" : "type",
+          "purpose" : "" },
+        
+        { "name" : "body1Comp",
+          "purpose" : "" },
+        
+        { "name" : "body2Comp",
+          "purpose" : "" },
+        
+        { "name" : "body1Type",
+          "purpose" : "" },
+        
+        { "name" : "body2Type",
+          "purpose" : "" },
+        
+        { "name" : "body1Loc",
+          "purpose" : "" },
+        
+        { "name" : "body1Axis",
+          "purpose" : "" },
+        
+        { "name" : "body2Loc",
+          "purpose" : "" },
+        
+        { "name" : "body2Axis",
+          "purpose" : "" } ],
+      "outputs" : 
+      [ 
+        { "name" : "pmitConstrainhOut",
+          "purpose" : "" } ],
+      "seealso" : 
+      [ 
+        { "url" : "pmitassemcomph.html",
+          "name" : "PmitAssemCompH" },
+        
+        { "url" : "pmitconstrainh.html",
+          "name" : "PmitConstrainH" },
+        
+        { "url" : "pmitconstraintype.html",
+          "name" : "PmitConstrainType" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" },
+        
+        { "url" : "pmitgeomtype.html",
+          "name" : "PmitGeomType" } ] },
+    { "href" : "ref\/pmit_disconnectfrom_matlab.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "pmit_disconnectfrom_matlab",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Disconnect from MATLAB session",
+      "introduced" : "R2009b",
+      "description" : "This MATLAB function returns an error status PmitError.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "PmitError = pmit_disconnectfrom_matlab()" ] } ],
+      "seealso" : 
+      [ 
+        { "url" : "pmit_connectto_matlab.html",
+          "name" : "pmit_connectto_matlab" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" } ] },
+    { "href" : "ref\/pmit_get_reffixedstatus.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "pmit_get_reffixedstatus",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Get fixed status of CAD model",
+      "introduced" : "R2009b",
+      "description" : "This MATLAB function returns an error status PmitError.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "PmitError = pmit_get_reffixedstatus(int* fixedstatusOut, const PmitCadModelRefH cadModelRefH)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "cadModelRefH",
+          "purpose" : "" } ],
+      "outputs" : 
+      [ 
+        { "name" : "fixedstatusOut",
+          "purpose" : "" } ],
+      "seealso" : 
+      [ 
+        { "url" : "pmitcadmodelrefh.html",
+          "name" : "PmitCadModelRefH" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" } ] },
+    { "href" : "ref\/pmit_get_refflexiblestatus.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "pmit_get_refflexiblestatus",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Get flexible status of CAD model",
+      "introduced" : "R2009b",
+      "description" : "This MATLAB function returns an error status PmitError.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "PmitError = pmit_get_refflexiblestatus(int* flexstatusOut, const PmitCadModelRefH cadModelRefH)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "cadModelRefH",
+          "purpose" : "" } ],
+      "outputs" : 
+      [ 
+        { "name" : "flexstatusOut",
+          "purpose" : "" } ],
+      "seealso" : 
+      [ 
+        { "url" : "pmitcadmodelrefh.html",
+          "name" : "PmitCadModelRefH" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" } ] },
+    { "href" : "ref\/pmit_open_demo.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "pmit_open_demo",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Open Simscape Multibody Link examples in MATLAB Help browser",
+      "introduced" : "R2009b",
+      "description" : "This MATLAB function returns an error status PmitError.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "PmitError = pmit_open_demo()" ] } ],
+      "seealso" : 
+      [ 
+        { "url" : "..\/..\/..\/matlab\/ref\/demo.html",
+          "name" : "demo" },
+        
+        { "url" : "pmit_connectto_matlab.html",
+          "name" : "pmit_connectto_matlab" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" },
+        
+        { "url" : "pmit_open_help.html",
+          "name" : "pmit_open_help" } ] },
+    { "href" : "ref\/pmit_open_help.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "pmit_open_help",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Open product documentation in MATLAB Help browser",
+      "introduced" : "R2009b",
+      "description" : "This MATLAB function returns an error status PmitError.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "PmitError = pmit_open_help(const char* helpItem)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "helpItem",
+          "purpose" : "" } ],
+      "seealso" : 
+      [ 
+        { "url" : "..\/..\/..\/matlab\/ref\/doc.html",
+          "name" : "doc" },
+        
+        { "url" : "pmit_connectto_matlab.html",
+          "name" : "pmit_connectto_matlab" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" },
+        
+        { "url" : "pmit_open_demo.html",
+          "name" : "pmit_open_demo" } ] },
+    { "href" : "ref\/pmit_release_buffer.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "pmit_release_buffer",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Release character buffer returned by API function",
+      "introduced" : "R2009b",
+      "description" : "This MATLAB function returns an error status PmitError.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "PmitError = pmit_release_buffer(char** buffer)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "buffer",
+          "purpose" : "" } ],
+      "seealso" : 
+      [ 
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" },
+        
+        { "url" : "pmit_release_object.html",
+          "name" : "pmit_release_object" } ] },
+    { "href" : "ref\/pmit_release_object.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "pmit_release_object",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Release object used by API session",
+      "introduced" : "R2009b",
+      "description" : "This MATLAB function returns an error status PmitError.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "PmitError = pmit_release_object(PmitObjectH objectH)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "objectH",
+          "purpose" : "" } ],
+      "seealso" : 
+      [ 
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" },
+        
+        { "url" : "pmitobjecth.html",
+          "name" : "PmitObjectH" },
+        
+        { "url" : "pmit_release_buffer.html",
+          "name" : "pmit_release_buffer" } ] },
+    { "href" : "ref\/pmit_set_reffixedstatus.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "pmit_set_reffixedstatus",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Set fixed status of CAD model",
+      "introduced" : "R2009b",
+      "description" : "This MATLAB function returns an error status PmitError.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "PmitError = pmit_set_reffixedstatus(PmitCadModelRefH cadModelRefH, int status)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "cadModelRefH",
+          "purpose" : "" },
+        
+        { "name" : "status",
+          "purpose" : "" } ],
+      "seealso" : 
+      [ 
+        { "url" : "pmitcadmodelrefh.html",
+          "name" : "PmitCadModelRefH" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" } ] },
+    { "href" : "ref\/pmit_set_refflexiblestatus.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "pmit_set_refflexiblestatus",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Set flexible status of CAD model",
+      "introduced" : "R2009b",
+      "description" : "This MATLAB function returns an error status PmitError.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "PmitError = pmit_set_refflexiblestatus(PmitCadModelRefH cadModelRefH, int status)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "cadModelRefH",
+          "purpose" : "" },
+        
+        { "name" : "status",
+          "purpose" : "" } ],
+      "seealso" : 
+      [ 
+        { "url" : "pmitcadmodelrefh.html",
+          "name" : "PmitCadModelRefH" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" } ] },
+    { "href" : "ref\/pmit_set_tolerances.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "pmit_set_tolerances",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Set linear, angular, and relative tolerances of object of PmitCad2SMH class",
+      "introduced" : "R2009b",
+      "description" : "This MATLAB function returns an error status PmitError.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "PmitError = pmit_set_tolerances(PmitCad2SMH pmitCad2SMH, double linearTol, double angularTol, double relativeTol)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "pmitCad2SMH",
+          "purpose" : "" },
+        
+        { "name" : "linearTol",
+          "purpose" : "" },
+        
+        { "name" : "angularTol",
+          "purpose" : "" },
+        
+        { "name" : "relativeTol",
+          "purpose" : "" } ],
+      "seealso" : 
+      [ 
+        { "url" : "pmitcad2smh.html",
+          "name" : "PmitCad2SMH" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" },
+        
+        { "url" : "pmitlengthunit.html",
+          "name" : "PmitLengthUnit" },
+        
+        { "url" : "pmit_set_units.html",
+          "name" : "pmit_set_units" } ] },
+    { "href" : "ref\/pmit_set_units.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "pmit_set_units",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Set units for API session",
+      "introduced" : "R2009b",
+      "description" : "This MATLAB function returns an error status PmitError.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "PmitError = pmit_set_units(PmitMassUnit massUnit, PmitLengthUnit lenUnit)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "massUnit",
+          "purpose" : "" },
+        
+        { "name" : "lenUnit",
+          "purpose" : "" } ],
+      "seealso" : 
+      [ 
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" },
+        
+        { "url" : "pmitlengthunit.html",
+          "name" : "PmitLengthUnit" },
+        
+        { "url" : "pmitmassunit.html",
+          "name" : "PmitMassUnit" },
+        
+        { "url" : "pmit_set_tolerances.html",
+          "name" : "pmit_set_tolerances" } ] },
+    { "href" : "ref\/pmit_write_xml.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "pmit_write_xml",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Write output of object of PmitCad2SMH class",
+      "introduced" : "R2009b",
+      "description" : "This MATLAB function returns an error status PmitError.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "PmitError = mit_write_xml(char** const pconstrainErrorOut, PmitCad2SMH pmitCad2SMH, const char* filename)" ] } ],
+      "inputs" : 
+      [ 
+        { "name" : "pmitCad2SMH",
+          "purpose" : "" },
+        
+        { "name" : "filename",
+          "purpose" : "" } ],
+      "outputs" : 
+      [ 
+        { "name" : "pconstrainErrorOut",
+          "purpose" : "" } ],
+      "seealso" : 
+      [ 
+        { "url" : "pmitcad2smh.html",
+          "name" : "PmitCad2SMH" },
+        
+        { "url" : "pmit_create_cad2sm.html",
+          "name" : "pmit_create_cad2sm" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" } ] },
+    { "href" : "ref\/pmitassemcomph.html",
+      "refentity" : 
+      [ 
+        { "type" : "simscapeblock",
+          "name" : "PmitAssemCompH" } ],
+      "refpurpose" : "Handle object type to represent component in API CAD model",
+      "description" : "PmitAssemCompH is a C language opaque type.",
+      "seealso" : 
+      [ 
+        { "url" : "pmit_add_refincomp.html",
+          "name" : "pmit_add_refincomp" },
+        
+        { "url" : "pmit_create_assemcomp.html",
+          "name" : "pmit_create_assemcomp" },
+        
+        { "url" : "pmit_create_assemcomp_fromstr.html",
+          "name" : "pmit_create_assemcomp_fromstr" },
+        
+        { "url" : "pmit_create_constrain.html",
+          "name" : "pmit_create_constrain" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" } ] },
+    { "href" : "ref\/pmitcad2smh.html",
+      "refentity" : 
+      [ 
+        { "type" : "simscapeblock",
+          "name" : "PmitCad2SMH" } ],
+      "refpurpose" : "Handle object type to represent API-to-XML translator",
+      "description" : "PmitCad2SMH is a C language opaque type.",
+      "seealso" : 
+      [ 
+        { "url" : "pmit_create_cad2sm.html",
+          "name" : "pmit_create_cad2sm" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" },
+        
+        { "url" : "pmit_set_tolerances.html",
+          "name" : "pmit_set_tolerances" },
+        
+        { "url" : "pmit_write_xml.html",
+          "name" : "pmit_write_xml" } ] },
+    { "href" : "ref\/pmitcadcsh.html",
+      "refentity" : 
+      [ 
+        { "type" : "simscapeblock",
+          "name" : "PmitCadCSH" } ],
+      "refpurpose" : "Handle object type to represent coordinate system",
+      "description" : "PmitCadCSH is a C language opaque type.",
+      "seealso" : 
+      [ 
+        { "url" : "pmit_add_cadcs.html",
+          "name" : "pmit_add_cadcs" },
+        
+        { "url" : "pmit_create_cadcs.html",
+          "name" : "pmit_create_cadcs" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" } ] },
+    { "href" : "ref\/pmitcadmodelh.html",
+      "refentity" : 
+      [ 
+        { "type" : "simscapeblock",
+          "name" : "PmitCadModelH" } ],
+      "refpurpose" : "Handle object type to represent API CAD model",
+      "description" : "PmitCadModelH is a C language opaque type.",
+      "seealso" : 
+      [ 
+        { "url" : "pmit_add_constrain.html",
+          "name" : "pmit_add_constrain" },
+        
+        { "url" : "pmit_add_refincadmodel.html",
+          "name" : "pmit_add_refincadmodel" },
+        
+        { "url" : "pmit_cadmodel_setfilename.html",
+          "name" : "pmit_cadmodel_setfilename" },
+        
+        { "url" : "pmit_cadmodelref_getcadmodel.html",
+          "name" : "pmit_cadmodelref_getcadmodel" },
+        
+        { "url" : "pmit_create_assemcomp_fromstr.html",
+          "name" : "pmit_create_assemcomp_fromstr" },
+        
+        { "url" : "pmit_create_cad2sm.html",
+          "name" : "pmit_create_cad2sm" },
+        
+        { "url" : "pmit_create_cadmodel.html",
+          "name" : "pmit_create_cadmodel" },
+        
+        { "url" : "pmit_create_cadmodelref.html",
+          "name" : "pmit_create_cadmodelref" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" } ] },
+    { "href" : "ref\/pmitcadmodelrefh.html",
+      "refentity" : 
+      [ 
+        { "type" : "simscapeblock",
+          "name" : "PmitCadModelRefH" } ],
+      "refpurpose" : "Handle object type to reference a CAD model in API CAD model hierarchy",
+      "description" : "PmitCadModelRefH is a C language opaque type.",
+      "seealso" : 
+      [ 
+        { "url" : "pmit_add_refincadmodel.html",
+          "name" : "pmit_add_refincadmodel" },
+        
+        { "url" : "pmit_add_refincomp.html",
+          "name" : "pmit_add_refincomp" },
+        
+        { "url" : "pmit_cadmodelref_getcadmodel.html",
+          "name" : "pmit_cadmodelref_getcadmodel" },
+        
+        { "url" : "pmit_create_cadmodelref.html",
+          "name" : "pmit_create_cadmodelref" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" },
+        
+        { "url" : "pmit_get_reffixedstatus.html",
+          "name" : "pmit_get_reffixedstatus" },
+        
+        { "url" : "pmit_get_refflexiblestatus.html",
+          "name" : "pmit_get_refflexiblestatus" },
+        
+        { "url" : "pmit_set_reffixedstatus.html",
+          "name" : "pmit_set_reffixedstatus" },
+        
+        { "url" : "pmit_set_refflexiblestatus.html",
+          "name" : "pmit_set_refflexiblestatus" } ] },
+    { "href" : "ref\/pmitconstrainh.html",
+      "refentity" : 
+      [ 
+        { "type" : "simscapeblock",
+          "name" : "PmitConstrainH" } ],
+      "refpurpose" : "Handle object type to represent constraint",
+      "description" : "PmitConstrainH is a C language opaque type.",
+      "seealso" : 
+      [ 
+        { "url" : "pmit_add_constrain.html",
+          "name" : "pmit_add_constrain" },
+        
+        { "url" : "pmitconstraintype.html",
+          "name" : "PmitConstrainType" },
+        
+        { "url" : "pmit_create_constrain.html",
+          "name" : "pmit_create_constrain" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" } ] },
+    { "href" : "ref\/pmitconstraintype.html",
+      "refentity" : 
+      [ 
+        { "type" : "simscapeblock",
+          "name" : "PmitConstrainType" } ],
+      "refpurpose" : "Enumerated type for specifying constraint type",
+      "description" : "PmitConstrainType is a C language enumerated type.",
+      "seealso" : 
+      [ 
+        { "url" : "pmit_add_constrain.html",
+          "name" : "pmit_add_constrain" },
+        
+        { "url" : "pmitconstrainh.html",
+          "name" : "PmitConstrainH" },
+        
+        { "url" : "pmit_create_constrain.html",
+          "name" : "pmit_create_constrain" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" } ] },
+    { "href" : "ref\/pmiterror.html",
+      "refentity" : 
+      [ 
+        { "type" : "simscapeblock",
+          "name" : "PmitError" } ],
+      "refpurpose" : "Enumerated type for error status",
+      "description" : "PmitError is a C language enumerated type." },
+    { "href" : "ref\/pmitgeomtype.html",
+      "refentity" : 
+      [ 
+        { "type" : "simscapeblock",
+          "name" : "PmitGeomType" } ],
+      "refpurpose" : "Enumerated type for specifying geometry of component",
+      "description" : "PmitGeomType is a C language enumerated type.",
+      "seealso" : 
+      [ 
+        { "url" : "pmit_create_constrain.html",
+          "name" : "pmit_create_constrain" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" } ] },
+    { "href" : "ref\/pmitlengthunit.html",
+      "refentity" : 
+      [ 
+        { "type" : "simscapeblock",
+          "name" : "PmitLengthUnit" } ],
+      "refpurpose" : "Enumerated type for specifying length unit in API session",
+      "description" : "PmitLengthUnit is a C language enumerated type.",
+      "seealso" : 
+      [ 
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" },
+        
+        { "url" : "pmitmassunit.html",
+          "name" : "PmitMassUnit" },
+        
+        { "url" : "pmit_set_units.html",
+          "name" : "pmit_set_units" } ] },
+    { "href" : "ref\/pmitmassunit.html",
+      "refentity" : 
+      [ 
+        { "type" : "simscapeblock",
+          "name" : "PmitMassUnit" } ],
+      "refpurpose" : "Enumerated type for specifying mass unit in API session",
+      "description" : "PmitMassUnit is a C language enumerated type.",
+      "seealso" : 
+      [ 
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" },
+        
+        { "url" : "pmitlengthunit.html",
+          "name" : "PmitLengthUnit" },
+        
+        { "url" : "pmit_set_units.html",
+          "name" : "pmit_set_units" } ] },
+    { "href" : "ref\/pmitobjecth.html",
+      "refentity" : 
+      [ 
+        { "type" : "simscapeblock",
+          "name" : "PmitObjectH" } ],
+      "refpurpose" : "Handle object type to represent any API object",
+      "description" : "PmitObjectH is a C language opaque type.",
+      "seealso" : 
+      [ 
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" },
+        
+        { "url" : "pmit_release_object.html",
+          "name" : "pmit_release_object" } ] },
+    { "href" : "ref\/pmitvismatprop.html",
+      "refentity" : 
+      [ 
+        { "type" : "simscapeblock",
+          "name" : "PmitVisMatProp" } ],
+      "refpurpose" : "Structure type for defining visualized material properties of API CAD object",
+      "description" : "PmitVisMatProp is a C language structure type.",
+      "seealso" : 
+      [ 
+        { "url" : "pmit_create_cadmodel.html",
+          "name" : "pmit_create_cadmodel" },
+        
+        { "url" : "pmit_create_cadmodelref.html",
+          "name" : "pmit_create_cadmodelref" },
+        
+        { "url" : "pmiterror.html",
+          "name" : "PmitError" } ] },
+    { "href" : "ref\/smlink_linkinv.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "smlink_linkinv",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Add Simscape Multibody Link to your Windows registry as an Autodesk Inventor plugin",
+      "description" : "This MATLAB function adds Simscape Multibody Link to your Windows registry as an Autodesk Inventor plugin.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "smlink_linkinv" ] } ],
+      "seealso" : 
+      [ 
+        { "url" : "..\/..\/..\/physmod\/sm\/ref\/smimport.html",
+          "name" : "smimport" } ] },
+    { "href" : "ref\/smlink_linksw.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "smlink_linksw",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Add Simscape Multibody Link to your Windows registry as a SolidWorks plugin",
+      "description" : "This MATLAB function adds Simscape Multibody Link to your Windows registry as a SolidWorks plugin.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "smlink_linksw" ] } ],
+      "seealso" : 
+      [ 
+        { "url" : "..\/..\/..\/physmod\/sm\/ref\/smimport.html",
+          "name" : "smimport" } ] },
+    { "href" : "ref\/smlink_unlinkinv.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "smlink_unlinkinv",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Remove Simscape Multibody Link from your Windows registry as an Autodesk Inventor plugin",
+      "description" : "This MATLAB function removes Simscape Multibody Link from your Windows registry as an Autodesk Inventor plugin.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "smlink_unlinkinv" ] } ],
+      "seealso" : 
+      [ 
+        { "url" : "..\/..\/..\/physmod\/sm\/ref\/smimport.html",
+          "name" : "smimport" } ] },
+    { "href" : "ref\/smlink_unlinksw.html",
+      "refentity" : 
+      [ 
+        { "type" : "function",
+          "name" : "smlink_unlinksw",
+          "fcntype" : "simple" } ],
+      "refpurpose" : "Remove Simscape Multibody Link from your Windows registry as a SolidWorks plugin",
+      "description" : "This MATLAB function removes Simscape Multibody Link from your Windows registry as a SolidWorks plugin.",
+      "syntaxgroup" : 
+      [ 
+        { "title" : "",
+          "syntax" : 
+          [ "smlink_unlinksw" ] } ],
+      "seealso" : 
+      [ 
+        { "url" : "..\/..\/..\/physmod\/sm\/ref\/smimport.html",
+          "name" : "smimport" } ] }
+  ]
+}
